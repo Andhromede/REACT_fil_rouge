@@ -1,0 +1,27 @@
+# # ?
+# POST http://localhost:5001/user
+# Content-Type: application/json
+# {
+#     "login": "lydlus@hotmail.com",
+#     "password": "$2a$10$FEBywZh8u9M0Cec/0mWep.1kXrwKeiWDba6tdKvDfEBjyePJnDT7K",
+#     "token": "NULL"
+# }
+
+
+# # LOGIN THE USER
+# POST http://localhost:5001/auth
+# Content-Type: application/json
+# {
+#     "login": "lydlus@hotmail.fr",
+#     "password": "test"
+# }
+
+
+# # INSERT ONE USER IN BDD
+# PUT http://localhost:5001/auth
+# Content-Type: application/json
+
+# {
+#     "login": "lydlus@hotmail.com",
+#     "password": "test"
+# }

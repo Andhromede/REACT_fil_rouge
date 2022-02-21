@@ -1,6 +1,6 @@
 /************************ NAVBAR *************************/
     .myCol{
-        background-color: #F2EDD5!important;
+        background-color: var(--beige);
         font-size: 1.2rem;
         font-weight: 500;
     }
@@ -18,7 +18,7 @@
     }
 
 /************************ CARDS *************************/
-    #card{
+    /* #card{
         width: 100vw;
         min-height: 100vh;
     }
@@ -43,15 +43,7 @@
 
     #cardBody{
         background-color: #F2EDD5;
-    }
-
-/************************ FOOTER *************************/
-    .myFooter{
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        background-color: #F2EDD5 ;
-        margin-top: 30px;
-        padding: 9px;
-    }
+    } */
 
 /************************ PAGE ERROR *************************/
     /* .error{
@@ -71,7 +63,7 @@
 
 
 
-    .myCol{
+    /* .myCol{
         background-color: #F2EDD5!important;
         font-size: 1.2rem;
         font-weight: 500;
@@ -87,4 +79,4 @@
         font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         color: #F25050!important;
         letter-spacing: 0.1rem;
-    }
+    } */

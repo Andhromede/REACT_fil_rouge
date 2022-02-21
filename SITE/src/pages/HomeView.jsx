@@ -1,9 +1,9 @@
 
 const HomeView = (props) => {
     return (
-        <>
-            <div className='text-center myTitle2 myColor'>Page Home</div>
-        </>
+        <div className="container marginNav">
+            <div className='text-center myTitle2 myColor h1'>Page Home</div>
+        </div>
     );
 }
 

@@ -1,0 +1,48 @@
+# # INSERT MANY
+# PUT http://localhost:5001/contact
+# Content-Type: application/json
+# [
+# {
+#     "firstname":"truc",
+#     "lastname" : "test",
+#     "email":"test",
+#     "message":"blabla"
+# },
+# {
+#     "firstname":"Machin",
+#     "lastname" : "test2",
+#     "email":"test2",
+#     "message":"Gniiiiiiiiiii"
+# }
+# ]
+
+
+
+# # UPDATE SIMPLE (with ID)
+# PUT http://localhost:5001/contact/1
+# Content-Type: application/json
+# {
+#     "firstname": "BIDULE"
+# }
+
+
+
+# # UPDATE WITH CONDITION
+# PATCH http://localhost:5001/contact
+# Content-Type: application/json
+# {
+#     "firstname": "Machin",
+#     "where": "firstname = 'Test'"
+# }
+
+
+
+# # SOFT DELETE
+# patch http://localhost:5001/contact/1
+
+
+
+# # HARD DELETE
+# DELETE http://localhost:5001/contact/23
+
+

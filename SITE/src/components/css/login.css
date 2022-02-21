@@ -1,0 +1,20 @@
+.bgLoginCard{
+    background-color: var(--black);
+    border-radius: 2px;
+    border: solid var(--salmon) 4px;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(172, 172, 172); */
+}
+
+.hr{
+    background-color: var(--salmon);
+    opacity: 1;
+    padding-top: 5px;
+}
+
+.test{
+    margin-top: 15vh;
+}

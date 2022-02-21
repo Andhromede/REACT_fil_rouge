@@ -1,6 +1,6 @@
 .myFooter{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: #F2EDD5 ;
+    background-color: var(--beige);
     margin-top: 30px;
     padding: 9px;
 }

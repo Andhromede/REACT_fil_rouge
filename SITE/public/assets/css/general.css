@@ -1,0 +1,38 @@
+body{
+    background-color: var(--grey);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 0.1rem;
+
+    /* Variables de couleurs */
+    --grey: #67595E;
+    --lightGrey: #A49393;
+
+    --beige: #F2EDD5;
+    --salmon: #E98973;
+    --corail: #E6C5B3;
+    --mint: #88B2CC;
+    --blue: #658EA9;
+    
+    --blueGrey: #6B8490;
+    --black: #252930;
+    --ivory: #E3E6E0;
+    --kaki: #C0B3A0;
+
+}
+
+.btnGeneral{
+    background-color: var(--beige) !important;
+}
+
+.btnGeneral:hover{
+    background-color: var(--kaki) !important;
+    box-shadow: inset 5px 5px 10px rgb(36, 36, 36);
+}
+
+.txtBeige{
+    color: var(--beige);
+}
+
+.marginNav{
+    margin-top: 6em;
+}
