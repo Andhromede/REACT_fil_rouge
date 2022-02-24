@@ -1,8 +1,17 @@
+import MenuLeft from '../components/MenuLeft';
+
+
 const AccountView = (props) => {
     return (
-        <>
-            <div className='text-center myTitle2 myColor'>Page Account</div>
-        </>
+        <div className="container-fluid">
+
+            <MenuLeft path={"http://localhost:5001/animal"} page={"accountView"}/>
+
+
+
+
+
+        </div>
     );
 }
 

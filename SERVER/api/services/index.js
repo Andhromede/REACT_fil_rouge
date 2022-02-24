@@ -1,3 +1,15 @@
 exports.auth = require('./auth.service');
-exports.user = require('./user.service');
 exports.mailer = require('./mailer.service');
+exports.adresse = require('./adresse.service');
+exports.animal = require('./animal.service');
+exports.espece = require('./espece.service');
+exports.intitule_soin = require('./intitule_soin.service');
+exports.localisation = require('./localisation.service');
+exports.marquage = require('./marquage.service');
+exports.race_animal = require('./race_animal.service');
+exports.race = require('./race.service');
+exports.rdv = require('./rdv.service');
+exports.role = require('./role.service');
+exports.sante = require('./sante.service');
+exports.soin = require('./soin.service');
+exports.utilisateur = require('./utilisateur.service');

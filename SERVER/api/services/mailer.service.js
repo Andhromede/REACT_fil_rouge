@@ -10,8 +10,9 @@ class MailerService {
         }
     }
 
+
 /***************************** ENVOI DE MAIL *****************************/
-    sendMail = async (params) => {
+    send = async (params) => {
         const mailParams = {
             subject: "email test",
             html: "<b>message de test</b>",
@@ -45,7 +46,8 @@ class MailerService {
                 return false;
             }
 
-            console.log("Email sent : ", info, "\nView sent mail at : ", nodemailer.getTestMessageUrl(info));
+            // console.log("Email sent : ", info, "\nView sent mail at : ", nodemailer.getTestMessageUrl(info));
+            console.log("Email sent !");
             return true;
         });
     };

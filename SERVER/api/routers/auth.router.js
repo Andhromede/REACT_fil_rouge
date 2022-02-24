@@ -13,28 +13,34 @@ class AuthRouter{
         this.initializeRoutes();
     }
 
+
     initializeRoutes = () => {
     /************************* LOGIN ************************/
-        this.router.post('/', async (req, res) => {
+        this.router.post('/login', async (req, res) => {
             const data = await new AuthController().login(req.body);
             res.send(data);
         });
 
 
     /************************* INSCRIPTION ************************/
-        this.router.put("/", async (req, res) => {
+        this.router.put("/inscription", async (req, res) => {
             const response =  await new AuthController().inscription(req.body);
           res.send(response);
+        });
+
+    /************************* CHECK IF CONNECTED ************************/
+        this.router.get("/", async (req, res) => {
+            const response = await new AuthController().check(req);
+            res.json(response);
         });
 
     }
 
 }
 
+
+
 module.exports = AuthRouter;
-
-
-
 
 
 

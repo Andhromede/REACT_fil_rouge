@@ -1,0 +1,250 @@
+[
+    {
+        "nom": "abronia graminea",
+        "id_espece": "6"
+    },
+	{
+        "nom": "agamura persica",
+        "id_espece": "6"
+    },
+	{
+        "nom": "basiliscus plumifrons",
+        "id_espece": "6"
+    },
+	{
+        "nom": "bradypodion pumilum",
+        "id_espece": "6"
+    },
+	{
+        "nom": "broadleysaurus major",
+        "id_espece": "6"
+    },
+	{
+        "nom": "caméléon casqué",
+        "id_espece": "6"
+    },
+	{
+        "nom": "furcifer pardalis",
+        "id_espece": "6"
+    },
+	{
+        "nom": "chondrodactylus bibronii",
+        "id_espece": "6"
+    },
+	{
+        "nom": "correlophus ciliatus",
+        "id_espece": "6"
+    },
+	{
+        "nom": "cyrtopodion scabrum",
+        "id_espece": "6"
+    },
+	{
+        "nom": "gecko diurne à queue bleue",
+        "id_espece": "6"
+    },
+	{
+        "nom": "gecko diurne orné de l'île maurice",
+        "id_espece": "6"
+    },
+	{
+        "nom": "gecko léopard",
+        "id_espece": "6"
+    },
+	{
+        "nom": "gekko badenii",
+        "id_espece": "6"
+    },
+	{
+        "nom": "hemidactylus frenatus",
+        "id_espece": "6"
+    },
+	{
+        "nom": "hemidactylus imbricatus",
+        "id_espece": "6"
+    },
+	{
+        "nom": "hemidactylus mabouia",
+        "id_espece": "6"
+    },
+	{
+        "nom": "hemitheconyx caudicinctus",
+        "id_espece": "6"
+    },
+	{
+        "nom": "heteronotia binoei",
+        "id_espece": "6"
+    },
+	{
+        "nom": "homopholis fasciata",
+        "id_espece": "6"
+    },
+	{
+        "nom": "iguana iguana",
+        "id_espece": "6"
+    },
+	{
+        "nom": "lampropeltis getula",
+        "id_espece": "6"
+    },
+	{
+        "nom": "lepidodactylus lugubris",
+        "id_espece": "6"
+    },
+	{
+        "nom": "naultinus grayii",
+        "id_espece": "6"
+    },
+	{
+        "nom": "oedura castelnaui",
+        "id_espece": "6"
+    },
+	{
+        "nom": "ouroborus cataphractus",
+        "id_espece": "6"
+    },
+	{
+        "nom": "paroedura androyensis",
+        "id_espece": "6"
+    },
+	{
+        "nom": "paroedura picta",
+        "id_espece": "6"
+    },
+	{
+        "nom": "phelsuma guimbeaui",
+        "id_espece": "6"
+    },
+	{
+        "nom": "phelsuma klemmeri",
+        "id_espece": "6"
+    },
+	{
+        "nom": "phelsuma lineata",
+        "id_espece": "6"
+    },
+	{
+        "nom": "phelsuma madagascariensis",
+        "id_espece": "6"
+    },
+	{
+        "nom": "phelsuma quadriocellata",
+        "id_espece": "6"
+    },
+	{
+        "nom": "phelsuma robertmertensi",
+        "id_espece": "6"
+    },
+	{
+        "nom": "phelsuma serraticauda",
+        "id_espece": "6"
+    },
+	{
+        "nom": "phelsuma standingi",
+        "id_espece": "6"
+    },
+	{
+        "nom": "phelsuma v-nigra",
+        "id_espece": "6"
+    },
+	{
+        "nom": "physignathus cocincinus",
+        "id_espece": "6"
+    },
+	{
+        "nom": "pogona barbata",
+        "id_espece": "6"
+    },
+	{
+        "nom": "pogona henrylawsoni",
+        "id_espece": "6"
+    },
+	{
+        "nom": "pogona vitticeps",
+        "id_espece": "6"
+    },
+	{
+        "nom": "ptychozoon kuhli",
+        "id_espece": "6"
+    },
+	{
+        "nom": "python de children",
+        "id_espece": "6"
+    },
+	{
+        "nom": "rhacodactylus auriculatus",
+        "id_espece": "6"
+    },
+	{
+        "nom": "serpent des blés",
+        "id_espece": "6"
+    },
+	{
+        "nom": "smaug giganteus",
+        "id_espece": "6"
+    },
+	{
+        "nom": "stenodactylus leptocosymbotes",
+        "id_espece": "6"
+    },
+	{
+        "nom": "stenodactylus sthenodactylus",
+        "id_espece": "6"
+    },
+	{
+        "nom": "takydromus smaragdinus",
+        "id_espece": "6"
+    },
+	{
+        "nom": "tégu noir et blanc",
+        "id_espece": "6"
+    },
+	{
+        "nom": "tiliqua scincoides",
+        "id_espece": "6"
+    },
+	{
+        "nom": "tortue de floride",
+        "id_espece": "6"
+    },
+	{
+        "nom": "tortue peinte",
+        "id_espece": "6"
+    },
+	{
+        "nom": "tropiocolotes steudneri",
+        "id_espece": "6"
+    },
+	{
+        "nom": "underwoodisaurus milii",
+        "id_espece": "6"
+    },
+	{
+        "nom": "uroplatus ebenaui",
+        "id_espece": "6"
+    },
+	{
+        "nom": "uroplatus fimbriatus",
+        "id_espece": "6"
+    },
+	{
+        "nom": "uroplatus guentheri",
+        "id_espece": "6"
+    },
+	{
+        "nom": "uroplatus henkeli",
+        "id_espece": "6"
+    },
+	{
+        "nom": "uroplatus phantasticus",
+        "id_espece": "6"
+    },
+	{
+        "nom": "uroplatus sikorae",
+        "id_espece": "6"
+    },
+	{
+        "nom": "varanus acanthurus",
+        "id_espece": "6"
+    }
+]

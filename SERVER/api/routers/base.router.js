@@ -19,21 +19,21 @@ class BaseRouter {
         });
     
 
-    /****************************** GET ONE ******************************/
+    /****************************** GET ONE BY ******************************/
         this.router.get("/:id", async (req, res) => {
             const response = await this.controller.getOne(req.params.id);
             res.send(response);
         });
 
 
-    /************************** GET ALL BY POST **************************/
+    /************************** GET ALL BY (post) **************************/
         this.router.post("/", async (req, res) => {
             const response =  await this.controller.getAll(req.body);
             res.send(response);
         });
 
 
-    /************************* INSERT ONE BY PUT ************************/
+    /************************* INSERT ONE BY (put) ************************/
         this.router.put("/", async (req, res) => {
             const response =  await this.controller.insert(req.body);
           res.send(response);

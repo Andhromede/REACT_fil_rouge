@@ -1,7 +1,9 @@
 .bgLoginCard{
-    background-color: var(--black);
+    background-color: var(--sable);
     border-radius: 2px;
-    border: solid var(--salmon) 4px;
+    border: solid var(--vert) 4px;
+    box-shadow: 10px 10px 7px rgb(77, 77, 77);
+    border-radius: 2px;
 }
 
 body{
@@ -10,11 +12,74 @@ body{
 }
 
 .hr{
-    background-color: var(--salmon);
-    opacity: 1;
-    padding-top: 5px;
+    background-color: black;
+    opacity: 0.3;
+    padding-top: 2px;
+    border-radius: 3px;
 }
 
 .test{
     margin-top: 15vh;
+}
+
+.mdp-oublie{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--vert) !important;
+    font-size:1em;
+    letter-spacing:0px;
+    margin-top: -1em;
+}
+
+.mdp-oublie:hover{
+    color: black !important;
+    transition: 0.5s;
+}
+
+.linkInscription{
+    color: var(--vert);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.linkInscription:hover{
+    color: var(--black);
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+/* .test {
+    background: linear-gradient(
+      to right, 
+      hsl(98 100% 62%), 
+      hsl(204 100% 59%)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  } */
+
+
+
+
+.titreLogin {
+    background: linear-gradient(
+      to right, 
+      rgb(75, 151, 201),
+      rgb(194, 199, 202)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    
+    /* color: var(--vert); */
+    font-family: 'Rancho', cursive;
+    font-size:5em;
+    letter-spacing:0.15em;
+    margin-top:0.2em;
 }

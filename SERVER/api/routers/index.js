@@ -1,2 +1,14 @@
+exports.adresse = require('./adresse.router');
+exports.animal = require('./animal.router');
 exports.auth = require('./auth.router');
-exports.user = require('./user.router');
+exports.espece = require('./espece.router');
+exports.intitule_soin = require('./intitule_soin.router');
+exports.localisation = require('./localisation.router');
+exports.marquage = require('./marquage.router');
+exports.race_animal = require('./race_animal.router');
+exports.race = require('./race.router');
+exports.rdv = require('./rdv.router');
+exports.role = require('./role.router');
+exports.sante = require('./sante.router');
+exports.soin = require('./soin.router');
+exports.utilisateur = require('./utilisateur.router');

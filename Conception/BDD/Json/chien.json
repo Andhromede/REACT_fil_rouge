@@ -1,0 +1,1385 @@
+[{
+    "nom": "affenpinscher",
+    "id_espece": 1
+},
+{
+    "nom": "airedale terrier",
+    "id_espece": 1
+},
+{
+    "nom": "akita",
+    "id_espece": 1
+},
+{
+    "nom": "akita americain",
+    "id_espece": 1
+},
+{
+    "nom": "anglo francais de petite venerie",
+    "id_espece": 1
+},
+{
+    "nom": "ariegeois",
+    "id_espece": 1
+},
+{
+    "nom": "azawakh",
+    "id_espece": 1
+},
+{
+    "nom": "bangkaew de thailande",
+    "id_espece": 1
+},
+{
+    "nom": "barbet",
+    "id_espece": 1
+},
+{
+    "nom": "barbu tcheque",
+    "id_espece": 1
+},
+{
+    "nom": "barzoï",
+    "id_espece": 1
+},
+{
+    "nom": "basenji",
+    "id_espece": 1
+},
+{
+    "nom": "basset artesien normand",
+    "id_espece": 1
+},
+{
+    "nom": "basset bleu de gascogne",
+    "id_espece": 1
+},
+{
+    "nom": "basset de westphalie",
+    "id_espece": 1
+},
+{
+    "nom": "basset des alpes",
+    "id_espece": 1
+},
+{
+    "nom": "basset fauve de bretagne",
+    "id_espece": 1
+},
+{
+    "nom": "basset hound",
+    "id_espece": 1
+},
+{
+    "nom": "basset suedois",
+    "id_espece": 1
+},
+{
+    "nom": "beagle",
+    "id_espece": 1
+},
+{
+    "nom": "beagle harrier",
+    "id_espece": 1
+},
+{
+    "nom": "bearded collie",
+    "id_espece": 1
+},
+{
+    "nom": "bedlington terrier",
+    "id_espece": 1
+},
+{
+    "nom": "berger allemand",
+    "id_espece": 1
+},
+{
+    "nom": "berger australien",
+    "id_espece": 1
+},
+{
+    "nom": "berger belge",
+    "id_espece": 1
+},
+{
+    "nom": "berger bergamasque",
+    "id_espece": 1
+},
+{
+    "nom": "berger blanc suisse",
+    "id_espece": 1
+},
+{
+    "nom": "berger d'asie centrale",
+    "id_espece": 1
+},
+{
+    "nom": "berger de beauce",
+    "id_espece": 1
+},
+{
+    "nom": "berger de bosnie-herzegovine et de croatie",
+    "id_espece": 1
+},
+{
+    "nom": "berger de brie",
+    "id_espece": 1
+},
+{
+    "nom": "berger de la maremme et des abruzzes",
+    "id_espece": 1
+},
+{
+    "nom": "berger de la serra de aires",
+    "id_espece": 1
+},
+{
+    "nom": "berger de picardie",
+    "id_espece": 1
+},
+{
+    "nom": "berger de russie meridionale",
+    "id_espece": 1
+},
+{
+    "nom": "berger des pyrenees a face rase",
+    "id_espece": 1
+},
+{
+    "nom": "berger des pyrenees a poil long",
+    "id_espece": 1
+},
+{
+    "nom": "berger du caucase",
+    "id_espece": 1
+},
+{
+    "nom": "berger du karst",
+    "id_espece": 1
+},
+{
+    "nom": "berger finnois de laponie",
+    "id_espece": 1
+},
+{
+    "nom": "berger hollandais",
+    "id_espece": 1
+},
+{
+    "nom": "berger polonais de plaine",
+    "id_espece": 1
+},
+{
+    "nom": "bichon a poil frise",
+    "id_espece": 1
+},
+{
+    "nom": "bichon bolonais",
+    "id_espece": 1
+},
+{
+    "nom": "bichon havanais",
+    "id_espece": 1
+},
+{
+    "nom": "bichon maltais",
+    "id_espece": 1
+},
+{
+    "nom": "billy",
+    "id_espece": 1
+},
+{
+    "nom": "border collie",
+    "id_espece": 1
+},
+{
+    "nom": "border terrier",
+    "id_espece": 1
+},
+{
+    "nom": "bouledogue francais",
+    "id_espece": 1
+},
+{
+    "nom": "bouvier australien",
+    "id_espece": 1
+},
+{
+    "nom": "bouvier australien courte queue",
+    "id_espece": 1
+},
+{
+    "nom": "bouvier bernois",
+    "id_espece": 1
+},
+{
+    "nom": "bouvier de l'appenzell",
+    "id_espece": 1
+},
+{
+    "nom": "bouvier de l'entlebuch",
+    "id_espece": 1
+},
+{
+    "nom": "bouvier des ardennes",
+    "id_espece": 1
+},
+{
+    "nom": "bouvier des flandres",
+    "id_espece": 1
+},
+{
+    "nom": "boxer",
+    "id_espece": 1
+},
+{
+    "nom": "brachet allemand",
+    "id_espece": 1
+},
+{
+    "nom": "brachet de styrie a poil dur",
+    "id_espece": 1
+},
+{
+    "nom": "brachet noir et feu",
+    "id_espece": 1
+},
+{
+    "nom": "brachet polonais",
+    "id_espece": 1
+},
+{
+    "nom": "brachet tyrolien",
+    "id_espece": 1
+},
+{
+    "nom": "braque allemand a poil court",
+    "id_espece": 1
+},
+{
+    "nom": "braque d auvergne",
+    "id_espece": 1
+},
+{
+    "nom": "braque de burgos",
+    "id_espece": 1
+},
+{
+    "nom": "braque de l ariege",
+    "id_espece": 1
+},
+{
+    "nom": "braque de weimar",
+    "id_espece": 1
+},
+{
+    "nom": "braque du bourbonnais",
+    "id_espece": 1
+},
+{
+    "nom": "braque francais, type gascogne",
+    "id_espece": 1
+},
+{
+    "nom": "braque francais, type pyrenees",
+    "id_espece": 1
+},
+{
+    "nom": "braque hongrois a poil court",
+    "id_espece": 1
+},
+{
+    "nom": "braque hongrois a poil dur",
+    "id_espece": 1
+},
+{
+    "nom": "braque italien",
+    "id_espece": 1
+},
+{
+    "nom": "braque saint germain",
+    "id_espece": 1
+},
+{
+    "nom": "braque slovaque a poil dur",
+    "id_espece": 1
+},
+{
+    "nom": "briquet de provence",
+    "id_espece": 1
+},
+{
+    "nom": "briquet griffon vendeen",
+    "id_espece": 1
+},
+{
+    "nom": "broholmer",
+    "id_espece": 1
+},
+{
+    "nom": "bruno saint-hubert francais",
+    "id_espece": 1
+},
+{
+    "nom": "buhund norvegien",
+    "id_espece": 1
+},
+{
+    "nom": "bull terrier",
+    "id_espece": 1
+},
+{
+    "nom": "bull terrier miniature",
+    "id_espece": 1
+},
+{
+    "nom": "bulldog",
+    "id_espece": 1
+},
+{
+    "nom": "bullmastiff",
+    "id_espece": 1
+},
+{
+    "nom": "cairn terrier",
+    "id_espece": 1
+},
+{
+    "nom": "caniche",
+    "id_espece": 1
+},
+{
+    "nom": "carlin",
+    "id_espece": 1
+},
+{
+    "nom": "cavalier king charles",
+    "id_espece": 1
+},
+{
+    "nom": "chien a loutre",
+    "id_espece": 1
+},
+{
+    "nom": "chien chinois a crete",
+    "id_espece": 1
+},
+{
+    "nom": "chien courant d'istrie a poil dur",
+    "id_espece": 1
+},
+{
+    "nom": "chien courant d'istrie a poil ras",
+    "id_espece": 1
+},
+{
+    "nom": "chien courant de bosnie a poil dur",
+    "id_espece": 1
+},
+{
+    "nom": "chien courant de halden",
+    "id_espece": 1
+},
+{
+    "nom": "chien courant de hamilton",
+    "id_espece": 1
+},
+{
+    "nom": "chien courant de hygen",
+    "id_espece": 1
+},
+{
+    "nom": "chien courant de la valle de la save",
+    "id_espece": 1
+},
+{
+    "nom": "chien courant de montagne du montenegro",
+    "id_espece": 1
+},
+{
+    "nom": "chien courant de schiller",
+    "id_espece": 1
+},
+{
+    "nom": "chien courant de transylvanie",
+    "id_espece": 1
+},
+{
+    "nom": "chien courant du smaland",
+    "id_espece": 1
+},
+{
+    "nom": "chien courant espagnol",
+    "id_espece": 1
+},
+{
+    "nom": "chien courant finlandais",
+    "id_espece": 1
+},
+{
+    "nom": "chien courant grec",
+    "id_espece": 1
+},
+{
+    "nom": "chien courant italien a poil dur",
+    "id_espece": 1
+},
+{
+    "nom": "chien courant italien a poil ras",
+    "id_espece": 1
+},
+{
+    "nom": "chien courant norvegien",
+    "id_espece": 1
+},
+{
+    "nom": "chien courant polonais",
+    "id_espece": 1
+},
+{
+    "nom": "chien courant serbe",
+    "id_espece": 1
+},
+{
+    "nom": "chien courant slovaque",
+    "id_espece": 1
+},
+{
+    "nom": "chien courant suisse",
+    "id_espece": 1
+},
+{
+    "nom": "chien courant tricolore serbe",
+    "id_espece": 1
+},
+{
+    "nom": "chien d'arret allemand a poil dur",
+    "id_espece": 1
+},
+{
+    "nom": "chien d'arret allemand a poil long",
+    "id_espece": 1
+},
+{
+    "nom": "chien d'arret allemand a poil raide",
+    "id_espece": 1
+},
+{
+    "nom": "chien d'arret danois ancestral",
+    "id_espece": 1
+},
+{
+    "nom": "chien d'arret frison",
+    "id_espece": 1
+},
+{
+    "nom": "chien d'arret portugais",
+    "id_espece": 1
+},
+{
+    "nom": "chien d'artois",
+    "id_espece": 1
+},
+{
+    "nom": "chien d'eau americain",
+    "id_espece": 1
+},
+{
+    "nom": "chien d'eau espagnol",
+    "id_espece": 1
+},
+{
+    "nom": "chien d'eau frison",
+    "id_espece": 1
+},
+{
+    "nom": "chien d'eau portugais",
+    "id_espece": 1
+},
+{
+    "nom": "chien d'eau romagnol",
+    "id_espece": 1
+},
+{
+    "nom": "chien d'elan norvegien gris",
+    "id_espece": 1
+},
+{
+    "nom": "chien d'elan norvegien noir",
+    "id_espece": 1
+},
+{
+    "nom": "chien d'elan suedois / jämthund",
+    "id_espece": 1
+},
+{
+    "nom": "chien d'ours de carelie",
+    "id_espece": 1
+},
+{
+    "nom": "chien d'oysel allemand",
+    "id_espece": 1
+},
+{
+    "nom": "chien de berger anglais ancestral",
+    "id_espece": 1
+},
+{
+    "nom": "chien de berger catalan",
+    "id_espece": 1
+},
+{
+    "nom": "chien de berger croate",
+    "id_espece": 1
+},
+{
+    "nom": "chien de berger d anatolie",
+    "id_espece": 1
+},
+{
+    "nom": "chien de berger de majorque",
+    "id_espece": 1
+},
+{
+    "nom": "chien de berger des shetland",
+    "id_espece": 1
+},
+{
+    "nom": "chien de berger des tatras",
+    "id_espece": 1
+},
+{
+    "nom": "chien de berger islandais",
+    "id_espece": 1
+},
+{
+    "nom": "chien de berger roumain de mioritza",
+    "id_espece": 1
+},
+{
+    "nom": "chien de berger roumain des carpathes",
+    "id_espece": 1
+},
+{
+    "nom": "chien de berger yougoslave de charplanina",
+    "id_espece": 1
+},
+{
+    "nom": "chien de canaan",
+    "id_espece": 1
+},
+{
+    "nom": "chien de castro laboreiro",
+    "id_espece": 1
+},
+{
+    "nom": "chien de cour italien",
+    "id_espece": 1
+},
+{
+    "nom": "chien de ferme dano-suedois",
+    "id_espece": 1
+},
+{
+    "nom": "chien de garenne des canaries",
+    "id_espece": 1
+},
+{
+    "nom": "chien de garenne portugais",
+    "id_espece": 1
+},
+{
+    "nom": "chien de la serra da estrela",
+    "id_espece": 1
+},
+{
+    "nom": "chien de leonberg",
+    "id_espece": 1
+},
+{
+    "nom": "chien de montagne de l'atlas",
+    "id_espece": 1
+},
+{
+    "nom": "chien de montagne des pyrenees",
+    "id_espece": 1
+},
+{
+    "nom": "chien de perdrix de drente",
+    "id_espece": 1
+},
+{
+    "nom": "chien de rhodesie a crete dorsale",
+    "id_espece": 1
+},
+{
+    "nom": "chien de rouge de baviere",
+    "id_espece": 1
+},
+{
+    "nom": "chien de rouge du hanovre",
+    "id_espece": 1
+},
+{
+    "nom": "chien de saint hubert",
+    "id_espece": 1
+},
+{
+    "nom": "chien de taïwan",
+    "id_espece": 1
+},
+{
+    "nom": "chien du groenland",
+    "id_espece": 1
+},
+{
+    "nom": "chien du pharaon",
+    "id_espece": 1
+},
+{
+    "nom": "chien finnois de laponie",
+    "id_espece": 1
+},
+{
+    "nom": "chien loup de saarloos",
+    "id_espece": 1
+},
+{
+    "nom": "chien loup tchecoslovaque",
+    "id_espece": 1
+},
+{
+    "nom": "chien norvegien de macareux",
+    "id_espece": 1
+},
+{
+    "nom": "chien nu du perou",
+    "id_espece": 1
+},
+{
+    "nom": "chien nu du mexique",
+    "id_espece": 1
+},
+{
+    "nom": "chien thailandais a crete dorsale",
+    "id_espece": 1
+},
+{
+    "nom": "chihuahua",
+    "id_espece": 1
+},
+{
+    "nom": "chow chow",
+    "id_espece": 1
+},
+{
+    "nom": "cimarron uruguayen",
+    "id_espece": 1
+},
+{
+    "nom": "cirneco de l etna",
+    "id_espece": 1
+},
+{
+    "nom": "clumber spaniel",
+    "id_espece": 1
+},
+{
+    "nom": "cocker spaniel americain",
+    "id_espece": 1
+},
+{
+    "nom": "cocker spaniel anglais",
+    "id_espece": 1
+},
+{
+    "nom": "collie a poil court",
+    "id_espece": 1
+},
+{
+    "nom": "collie a poil long",
+    "id_espece": 1
+},
+{
+    "nom": "coton de tulear",
+    "id_espece": 1
+},
+{
+    "nom": "cursinu",
+    "id_espece": 1
+},
+{
+    "nom": "dalmatien",
+    "id_espece": 1
+},
+{
+    "nom": "dandie dinmont terrier",
+    "id_espece": 1
+},
+{
+    "nom": "dobermann",
+    "id_espece": 1
+},
+{
+    "nom": "dogue allemand",
+    "id_espece": 1
+},
+{
+    "nom": "dogue argentin",
+    "id_espece": 1
+},
+{
+    "nom": "dogue de bordeaux",
+    "id_espece": 1
+},
+{
+    "nom": "dogue de majorque",
+    "id_espece": 1
+},
+{
+    "nom": "dogue des canaries",
+    "id_espece": 1
+},
+{
+    "nom": "dogue du tibet",
+    "id_espece": 1
+},
+{
+    "nom": "english springer spaniel",
+    "id_espece": 1
+},
+{
+    "nom": "epagneul bleu de picardie",
+    "id_espece": 1
+},
+{
+    "nom": "epagneul breton",
+    "id_espece": 1
+},
+{
+    "nom": "epagneul d'eau irlandais",
+    "id_espece": 1
+},
+{
+    "nom": "epagneul de pont audemer",
+    "id_espece": 1
+},
+{
+    "nom": "epagneul de saint usuge",
+    "id_espece": 1
+},
+{
+    "nom": "epagneul francais",
+    "id_espece": 1
+},
+{
+    "nom": "epagneul japonais",
+    "id_espece": 1
+},
+{
+    "nom": "epagneul king charles",
+    "id_espece": 1
+},
+{
+    "nom": "epagneul nain continental",
+    "id_espece": 1
+},
+{
+    "nom": "epagneul pekinois",
+    "id_espece": 1
+},
+{
+    "nom": "epagneul picard",
+    "id_espece": 1
+},
+{
+    "nom": "epagneul tibetain",
+    "id_espece": 1
+},
+{
+    "nom": "esquimau du canada",
+    "id_espece": 1
+},
+{
+    "nom": "eurasier",
+    "id_espece": 1
+},
+{
+    "nom": "field spaniel",
+    "id_espece": 1
+},
+{
+    "nom": "fila brasileiro",
+    "id_espece": 1
+},
+{
+    "nom": "fila de saint miguel",
+    "id_espece": 1
+},
+{
+    "nom": "fox hound anglais",
+    "id_espece": 1
+},
+{
+    "nom": "fox terrier poil dur",
+    "id_espece": 1
+},
+{
+    "nom": "fox terrier poil lisse",
+    "id_espece": 1
+},
+{
+    "nom": "foxhound americain",
+    "id_espece": 1
+},
+{
+    "nom": "francais blanc et noir",
+    "id_espece": 1
+},
+{
+    "nom": "francais blanc et orange",
+    "id_espece": 1
+},
+{
+    "nom": "francais tricolore",
+    "id_espece": 1
+},
+{
+    "nom": "gascon saintongeois",
+    "id_espece": 1
+},
+{
+    "nom": "golden retriever",
+    "id_espece": 1
+},
+{
+    "nom": "grand anglo francais blanc et noir",
+    "id_espece": 1
+},
+{
+    "nom": "grand anglo-francais blanc et orange",
+    "id_espece": 1
+},
+{
+    "nom": "grand anglo-francais tricolore",
+    "id_espece": 1
+},
+{
+    "nom": "grand basset griffon vendeen",
+    "id_espece": 1
+},
+{
+    "nom": "grand bleu de gascogne",
+    "id_espece": 1
+},
+{
+    "nom": "grand bouvier suisse",
+    "id_espece": 1
+},
+{
+    "nom": "grand epagneul de munster",
+    "id_espece": 1
+},
+{
+    "nom": "grand griffon vendeen",
+    "id_espece": 1
+},
+{
+    "nom": "greyhound",
+    "id_espece": 1
+},
+{
+    "nom": "griffon a poil dur korthals",
+    "id_espece": 1
+},
+{
+    "nom": "griffon belge",
+    "id_espece": 1
+},
+{
+    "nom": "griffon bleu de gascogne",
+    "id_espece": 1
+},
+{
+    "nom": "griffon bruxellois",
+    "id_espece": 1
+},
+{
+    "nom": "griffon fauve de bretagne",
+    "id_espece": 1
+},
+{
+    "nom": "griffon nivernais",
+    "id_espece": 1
+},
+{
+    "nom": "harrier",
+    "id_espece": 1
+},
+{
+    "nom": "hokkaido",
+    "id_espece": 1
+},
+{
+    "nom": "hovawart",
+    "id_espece": 1
+},
+{
+    "nom": "husky de siberie",
+    "id_espece": 1
+},
+{
+    "nom": "jindo coreen",
+    "id_espece": 1
+},
+{
+    "nom": "kai",
+    "id_espece": 1
+},
+{
+    "nom": "kelpie australien",
+    "id_espece": 1
+},
+{
+    "nom": "kishu",
+    "id_espece": 1
+},
+{
+    "nom": "komondor",
+    "id_espece": 1
+},
+{
+    "nom": "kromfohrlander",
+    "id_espece": 1
+},
+{
+    "nom": "kuvasz",
+    "id_espece": 1
+},
+{
+    "nom": "laika de siberie occidentale",
+    "id_espece": 1
+},
+{
+    "nom": "laika de siberie orientale",
+    "id_espece": 1
+},
+{
+    "nom": "laika russo europeen",
+    "id_espece": 1
+},
+{
+    "nom": "lakeland terrier",
+    "id_espece": 1
+},
+{
+    "nom": "landseer",
+    "id_espece": 1
+},
+{
+    "nom": "lapphund suedois",
+    "id_espece": 1
+},
+{
+    "nom": "levrier afghan",
+    "id_espece": 1
+},
+{
+    "nom": "levrier ecossais",
+    "id_espece": 1
+},
+{
+    "nom": "levrier espagnol",
+    "id_espece": 1
+},
+{
+    "nom": "levrier hongrois",
+    "id_espece": 1
+},
+{
+    "nom": "levrier irlandais",
+    "id_espece": 1
+},
+{
+    "nom": "levrier polonais",
+    "id_espece": 1
+},
+{
+    "nom": "lhassa apso",
+    "id_espece": 1
+},
+{
+    "nom": "malamute de l'alaska",
+    "id_espece": 1
+},
+{
+    "nom": "manchester terrier",
+    "id_espece": 1
+},
+{
+    "nom": "mastiff",
+    "id_espece": 1
+},
+{
+    "nom": "mâtin de l'alentejo",
+    "id_espece": 1
+},
+{
+    "nom": "mâtin des pyrenees",
+    "id_espece": 1
+},
+{
+    "nom": "mâtin espagnol",
+    "id_espece": 1
+},
+{
+    "nom": "mâtin napolitain",
+    "id_espece": 1
+},
+{
+    "nom": "mudi",
+    "id_espece": 1
+},
+{
+    "nom": "norfolk terrier",
+    "id_espece": 1
+},
+{
+    "nom": "norwich terrier",
+    "id_espece": 1
+},
+{
+    "nom": "petit basset griffon vendeen",
+    "id_espece": 1
+},
+{
+    "nom": "petit bleu de gascogne",
+    "id_espece": 1
+},
+{
+    "nom": "petit brabancon",
+    "id_espece": 1
+},
+{
+    "nom": "petit chien courant suisse",
+    "id_espece": 1
+},
+{
+    "nom": "petit chien hollandais de chasse au gibier d'eau",
+    "id_espece": 1
+},
+{
+    "nom": "petit chien lion",
+    "id_espece": 1
+},
+{
+    "nom": "petit chien russe",
+    "id_espece": 1
+},
+{
+    "nom": "petit epagneul de munster",
+    "id_espece": 1
+},
+{
+    "nom": "petit levrier italien",
+    "id_espece": 1
+},
+{
+    "nom": "pinscher allemand",
+    "id_espece": 1
+},
+{
+    "nom": "pinscher autrichien",
+    "id_espece": 1
+},
+{
+    "nom": "pinscher nain",
+    "id_espece": 1
+},
+{
+    "nom": "podenco d'ibiza",
+    "id_espece": 1
+},
+{
+    "nom": "pointer anglais",
+    "id_espece": 1
+},
+{
+    "nom": "poitevin",
+    "id_espece": 1
+},
+{
+    "nom": "porcelaine",
+    "id_espece": 1
+},
+{
+    "nom": "pudelpointer",
+    "id_espece": 1
+},
+{
+    "nom": "puli",
+    "id_espece": 1
+},
+{
+    "nom": "pumi",
+    "id_espece": 1
+},
+{
+    "nom": "retriever a poil boucle",
+    "id_espece": 1
+},
+{
+    "nom": "retriever a poil plat",
+    "id_espece": 1
+},
+{
+    "nom": "retriever de la baie de chesapeake",
+    "id_espece": 1
+},
+{
+    "nom": "retriever de la nouvelle ecosse",
+    "id_espece": 1
+},
+{
+    "nom": "retriever du labrador",
+    "id_espece": 1
+},
+{
+    "nom": "rottweiler",
+    "id_espece": 1
+},
+{
+    "nom": "saint bernard",
+    "id_espece": 1
+},
+{
+    "nom": "saluki",
+    "id_espece": 1
+},
+{
+    "nom": "samoyede",
+    "id_espece": 1
+},
+{
+    "nom": "schapendoes neerlandais",
+    "id_espece": 1
+},
+{
+    "nom": "schipperke",
+    "id_espece": 1
+},
+{
+    "nom": "schnauzer",
+    "id_espece": 1
+},
+{
+    "nom": "schnauzer geant",
+    "id_espece": 1
+},
+{
+    "nom": "schnauzer nain",
+    "id_espece": 1
+},
+{
+    "nom": "sealyham terrier",
+    "id_espece": 1
+},
+{
+    "nom": "setter anglais",
+    "id_espece": 1
+},
+{
+    "nom": "setter gordon",
+    "id_espece": 1
+},
+{
+    "nom": "setter irlandais rouge",
+    "id_espece": 1
+},
+{
+    "nom": "setter irlandais rouge & blanc",
+    "id_espece": 1
+},
+{
+    "nom": "shar pei",
+    "id_espece": 1
+},
+{
+    "nom": "shiba",
+    "id_espece": 1
+},
+{
+    "nom": "shih tzu",
+    "id_espece": 1
+},
+{
+    "nom": "shikoku",
+    "id_espece": 1
+},
+{
+    "nom": "skye terrier",
+    "id_espece": 1
+},
+{
+    "nom": "sloughi",
+    "id_espece": 1
+},
+{
+    "nom": "smous des pays bas",
+    "id_espece": 1
+},
+{
+    "nom": "spinone",
+    "id_espece": 1
+},
+{
+    "nom": "spitz",
+    "id_espece": 1
+},
+{
+    "nom": "spitz de norrbotten",
+    "id_espece": 1
+},
+{
+    "nom": "spitz des visigoths",
+    "id_espece": 1
+},
+{
+    "nom": "spitz finlandais",
+    "id_espece": 1
+},
+{
+    "nom": "spitz japonais",
+    "id_espece": 1
+},
+{
+    "nom": "staffordshire bull terrier",
+    "id_espece": 1
+},
+{
+    "nom": "staffordshire terrier americain",
+    "id_espece": 1
+},
+{
+    "nom": "sussex spaniel",
+    "id_espece": 1
+},
+{
+    "nom": "tchouvatch slovaque",
+    "id_espece": 1
+},
+{
+    "nom": "teckel",
+    "id_espece": 1
+},
+{
+    "nom": "terre neuve",
+    "id_espece": 1
+},
+{
+    "nom": "terrier australien",
+    "id_espece": 1
+},
+{
+    "nom": "terrier australien a poil soyeux",
+    "id_espece": 1
+},
+{
+    "nom": "terrier bresilien",
+    "id_espece": 1
+},
+{
+    "nom": "terrier d'agrement anglais noir et feu",
+    "id_espece": 1
+},
+{
+    "nom": "terrier de boston",
+    "id_espece": 1
+},
+{
+    "nom": "terrier de chasse allemand",
+    "id_espece": 1
+},
+{
+    "nom": "terrier du reverend russell",
+    "id_espece": 1
+},
+{
+    "nom": "terrier ecossais",
+    "id_espece": 1
+},
+{
+    "nom": "terrier irlandais",
+    "id_espece": 1
+},
+{
+    "nom": "terrier irlandais a poil doux",
+    "id_espece": 1
+},
+{
+    "nom": "terrier irlandais glen of imaal",
+    "id_espece": 1
+},
+{
+    "nom": "terrier jack russell",
+    "id_espece": 1
+},
+{
+    "nom": "terrier japonais",
+    "id_espece": 1
+},
+{
+    "nom": "terrier kerry blue",
+    "id_espece": 1
+},
+{
+    "nom": "terrier noir russe",
+    "id_espece": 1
+},
+{
+    "nom": "terrier tcheque",
+    "id_espece": 1
+},
+{
+    "nom": "terrier tibetain",
+    "id_espece": 1
+},
+{
+    "nom": "tosa",
+    "id_espece": 1
+},
+{
+    "nom": "volpino italien",
+    "id_espece": 1
+},
+{
+    "nom": "welsh corgi cardigan",
+    "id_espece": 1
+},
+{
+    "nom": "welsh corgi pembroke",
+    "id_espece": 1
+},
+{
+    "nom": "welsh springer spaniel",
+    "id_espece": 1
+},
+{
+    "nom": "welsh terrier",
+    "id_espece": 1
+},
+{
+    "nom": "west highland white terrier",
+    "id_espece": 1
+},
+{
+    "nom": "whippet",
+    "id_espece": 1
+},
+{
+    "nom": "yorkshire terrier",
+    "id_espece": 1
+}
+]

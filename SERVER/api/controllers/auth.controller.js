@@ -1,82 +1,114 @@
 const bcrypt = require('bcrypt');
-const UserService = require('../services/user.service');
+const UtilisateurService = require('../services/utilisateur.service');
 const MailerService = require('../services/mailer.service');
 const appConfig = require("../configs/app.config");
 const jwt = require('jsonwebtoken');
 
 
-class AuthController{
 
-/***************************** RECHERCHE L'USER *****************************/
-    getUser = async (email) =>{
-        const userService = new UserService();
-        const users = await userService.getAll({where: `login = "${email}"`});
-        return users.length === 1 ? users.pop() : null;
+
+class AuthController {
+
+    /***************************** RECHERCHE L'USER *****************************/
+    getUtilisateur = async (email) => {
+        const utilisateurService = new UtilisateurService();
+        const utilisateurs = await utilisateurService.getAll({ where: `login = "${email}"` });
+        return utilisateurs.length === 1 ? utilisateurs.pop() : null;
     }
 
 
-/***************************** LOGIN *****************************/
+    /***************************** LOGIN *****************************/
     login = async (params) => {
         // if(params.method !== 'post') return {status:405};
-        let user = await this.getUser(params.login);
-        
-        if(user){
-            const passwordHashed = `${appConfig.HASH_PREFIX + user.password}`;
-            const passwordEnteredByUser = params.password;
-            let result = await bcrypt.compare(passwordEnteredByUser, passwordHashed);
+        let utilisateur = await this.getUtilisateur(params.login);
+        console.log(utilisateur);
 
-            if(result){
-                const payload = {email: user.login, role: user.user_role_id};
-                const token = jwt.sign(payload, appConfig.JWT_SECRET, { expiresIn: '1d' });
-                return {data:{...payload}, cookie:token};
-            }else{
-                return {status:401};
+        if (utilisateur) {
+            try {
+                const passwordHashed = `${appConfig.HASH_PREFIX + utilisateur.password}`;
+                const passwordEnteredByUtilisateur = params.password;
+                let result = await bcrypt.compare(passwordEnteredByUtilisateur, passwordHashed);
+
+                if (result) {
+                    const payload = { email: utilisateur.login, role: utilisateur.id_role };
+                    const token = jwt.sign(payload, appConfig.JWT_SECRET, { expiresIn: '1d' });
+                    // return {email:utilisateur.login, role:utilisateur.Id_role, token:token, result: true, message:"Vous etes bien connecté !"};
+                    // return {data:{...payload}, cookie:token};
+                    return { email: utilisateur.login, role: utilisateur.id_role, token, result: true, message: "Vous êtes bien authentifié !" };
+
+                } else {
+                    console.error("401");
+                    return { result: false, message: "Erreur de mots de passe." };
+                }
+
+            } catch (error) {
+                console.error(error);
+                return error;
             }
 
-        }else{
-            return {status:404};
+        } else {
+            console.log("404");
+            return { result: false, message: "Aucun utilisateur trouvé !" };
         }
-        
     }
 
 
-/***************************** INSCRIPTION *****************************/
-    inscription = async(params) => {
+    /***************************** INSCRIPTION *****************************/
+    inscription = async (params) => {
         // if(params.method !== 'PUT') return {status:405};
-        let user = await this.getUser(params.login);
-        
-        if(user){
-           console.log("Cet utilisateur existe déjà !");
-           return `Cet utilisateur existe déjà !`;
+        let utilisateur = await this.getUtilisateur(params.login);
 
-        }else{
-            const payload = {mail: params.login, role: 1};
-            const token = jwt.sign(payload, appConfig.JWT_SECRET, { expiresIn: '1d' });
-            const html = 
-                `<b>Lien de confirmation d'inscription: </b>
-                 <a href="http://localhost:3000/account/validation?t=${encodeURIComponent(token)}" target="_blank">Confirmer</a>
-                `;
+        if (utilisateur) {
+            //    console.log("Cet utilisateur existe déjà !");
+            return { message: "Cet adresse mail existe déjà !" };
 
-            const mailerService = new MailerService();
-            await mailerService.sendMail({from:"andhromede@gmail.com", to: params.login, subject:"Confirmer votre inscription", html});
-            
+        } else {
+            try {
+                const payload = { mail: params.login, role: params.id_role };
+                const token = jwt.sign(payload, appConfig.JWT_SECRET, { expiresIn: '1d' });
+                const html =
+                    `<b>Lien de confirmation d'inscription: </b>
+                     <a href="http://localhost:3000/account/validation?t=${encodeURIComponent(token)}" target="_blank">Confirmer mon inscription</a>
+                    `;
 
-            // let newPassword = await bcrypt.hash(params.password, 10);
-            // newPassword = newPassword.slice(7, newPassword.length);
-            // params.password = newPassword;
+                // const mailerService = new MailerService();
+                // await mailerService.send({ from: "andhromede@gmail.com", to: params.login, subject: "Confirmer votre inscription", html });
+                // await mailerService.sendMail({to: params.login, subject:"Confirmer votre inscription", html});
 
-            // const userService = new UserService();
-            // await userService.insert(params);
+                let newPassword = await bcrypt.hash(params.password, 10);
+                newPassword = newPassword.slice(7, newPassword.length);
+                params.password = newPassword;
+                params.id_role = 2;
+
+                const utilisateurService = new UtilisateurService();
+                await utilisateurService.insert(params);
+
+                return { status: 200 };
+
+            } catch (error) {
+                // console.error(error);
+                return { error };
+            }
         }
+
+    }
+
+    check = async (params) => {
+        const auth = params.cookies.auth;
+        if (auth) {
+            const result = jwt.verify(auth, appConfig.JWT_SECRET);
+            if (result) {
+                return { result:true, role:result.role }
+            }
+        }
+        return { result: false, role: 0 }
     }
 
 
 
 
-    
 
-    
-/***************************** POUR GENERER UN HASH DE MDP *****************************/
+    /***************************** POUR GENERER UN HASH DE MDP *****************************/
     // hash = async(password) => {
     //     const saltRounds = 10;
 
@@ -95,10 +127,10 @@ class AuthController{
     //         }
     //     })
     // }
-    
 
 
-    
+
+
 
 }
 module.exports = AuthController;

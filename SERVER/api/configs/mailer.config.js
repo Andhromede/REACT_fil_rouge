@@ -1,12 +1,13 @@
 const config ={
     smtp: {
         host: "smtp.gmail.com",
-        port: "587",
+        // port: "587",
+        port: "465",
         secure: true,
-        name: "gmail"
+        name: "gmail",
     },
-    user: "andhromede@gmail.com",
-    pass: "V9FSGyAW9"
+    user: "lydlusombre@gmail.com",
+    pass: "Fm8APqpp"
 }
 
 

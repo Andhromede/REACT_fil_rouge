@@ -1,2 +1,14 @@
+exports.adresse = require('./adresse.controller');
+exports.animal = require('./animal.controller');
 exports.auth = require('./auth.controller');
-exports.user = require('./user.controller');
+exports.espece = require('./espece.controller');
+exports.intitule_soin = require('./intitule_soin.controller');
+exports.localisation = require('./localisation.controller');
+exports.marquage = require('./marquage.controller');
+exports.race_animal = require('./race_animal.controller');
+exports.race = require('./race.controller');
+exports.rdv = require('./rdv.controller');
+exports.role = require('./role.controller');
+exports.sante = require('./sante.controller');
+exports.soin = require('./soin.controller');
+exports.utilisateur = require('./utilisateur.controller');

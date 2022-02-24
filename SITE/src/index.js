@@ -5,12 +5,17 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { AuthProvider } from "./contexts/AuthContext";
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <AuthProvider>
+            <App />
+        </AuthProvider>
+    </React.StrictMode>,
+    
+    document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
