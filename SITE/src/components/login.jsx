@@ -33,7 +33,7 @@ const LoginForm = (props) => {
 
 
     return (
-        <div className="col-md-8 col-lg-4 col-10 mx-auto bgLoginCard">
+        <div className="col-md-8 col-lg-5 col-10 mx-auto bgLoginCard">
 
             {(method === "put" && !captcha) && 
                 <div className="row">
@@ -44,14 +44,13 @@ const LoginForm = (props) => {
                     </div>
 
                     <div className="mb-4 col-11 mx-auto">
-                        <label htmlFor="captcha" className="form-label txtVert h5 mt-2 fw-bolder">Captcha</label>
+                        <label htmlFor="captcha" className="form-label txtGris h5 mt-2 fw-bolder">Captcha</label>
                         <input type="text" className="form-control" id="user_captcha_input" name="user_captcha_input" />
                     </div>
                     
-                    <button className="btn btnGeneral col-6 fw-bolder h-25 mt-auto  mx-auto" onClick={doSubmit}>
+                    <button className="btn btnGeneral col-6 fw-bolder mx-auto mb-5" onClick={doSubmit}>
                         Comparer
                     </button>
-                    <hr className="my-4 hr w-75 mx-auto"/>  
                 </div> 
             }
 
@@ -59,23 +58,23 @@ const LoginForm = (props) => {
             {(captcha || method === "post") && 
                 <TraitementForms method={method} path={path} submitButtonText={submitButtonText}>
                     <div className="my-4 col-10 col-md-9 mx-auto">
-                        <label htmlFor="login" className="form-label txtVert h5 fw-bolder">Email</label>
+                        <label htmlFor="login" className="form-label txtCorail h5 fw-bolder">Email</label>
                         <input type="email" className="form-control" id="login" name="login" required />
                     </div>
 
                     <div className="mb-4 col-10 col-md-9 mx-auto">
-                        <label htmlFor="password" className="form-label txtVert h5 mt-2 fw-bolder">Password</label>
+                        <label htmlFor="password" className="form-label txtCorail h5 mt-2 fw-bolder">Password</label>
                         <input type="password" className="form-control" id="password" name="password" />
                     </div>
 
                     {method === "put" &&
                         <div className="col-10 col-md-9 mx-auto">
-                            <label htmlFor="confirm" className="form-label txtVert h5 mt-2 fw-bolder">Confirm Password</label>
+                            <label htmlFor="confirm" className="form-label txtCorail h5 mt-2 fw-bolder">Confirm Password</label>
                             <input type="password" className="form-control" id="confirm" name="confirm" />
                         </div>
                     }
 
-                    {method === "post" && <Link className="nav-link text-dark mdp-oublie fw-bolder txt-gradiant" to={"/login"}>Mots de passe oublié ?</Link>}
+                    {method === "post" && <Link className="nav-link fw-bolder txtGris" to={"/connexion"}>Mots de passe oublié ?</Link>}
                 </TraitementForms>
             }
         </div>

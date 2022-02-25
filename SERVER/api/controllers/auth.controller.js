@@ -34,7 +34,7 @@ class AuthController {
                     const token = jwt.sign(payload, appConfig.JWT_SECRET, { expiresIn: '1d' });
                     // return {email:utilisateur.login, role:utilisateur.Id_role, token:token, result: true, message:"Vous etes bien connecté !"};
                     // return {data:{...payload}, cookie:token};
-                    return { email: utilisateur.login, role: utilisateur.id_role, token, result: true, message: "Vous êtes bien authentifié !" };
+                    return { email: utilisateur.login, role: utilisateur.id_role, token, result: true, message: "Vous êtes bien authentifié !", id:utilisateur.id_utilisateur };
 
                 } else {
                     console.error("401");

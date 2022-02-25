@@ -28,11 +28,11 @@ const AccountValidationView = () => {
             });
 
             if (data.completed) {
-                setTimeout(() => navigate("/login"), 4000);
+                setTimeout(() => navigate("/connexion"), 4000);
                 // document
                 //   .querySelector(".alert")
                 //   .addEventListener("closed.bs.alert", function () {
-                //     navigate("/login");
+                //     navigate("/connexion");
                 //   });
             }
         };

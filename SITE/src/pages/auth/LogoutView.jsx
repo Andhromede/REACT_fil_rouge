@@ -1,5 +1,5 @@
 import { useEffect, useContext } from "react";
-import { AuthContext } from "../contexts/AuthContext";
+import { AuthContext } from "../../contexts/AuthContext";
 import { useNavigate } from "react-router-dom";
 
 
@@ -10,7 +10,7 @@ const LogoutView = () => {
     useEffect(()=>{
         document.cookie = `auth=null;max-age=0`;
         setAuth({ role: 0 });
-        navigate("/login");
+        navigate("/connexion");
     },[])
 
     return (

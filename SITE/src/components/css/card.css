@@ -1,0 +1,27 @@
+/************************ CARDS *************************/
+#card{
+    width: 100vw;
+    min-height: 100vh;
+}
+
+#cardC{
+    margin-top: 60px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+    
+#img{
+    width: 287px;
+    height: 200px;
+    object-fit: cover;
+}
+
+#title{
+    color:  rgb(92, 92, 92);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+#cardBody{
+    background-color: #F2EDD5;
+}

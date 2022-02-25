@@ -1,22 +1,41 @@
 /************************ NAVBAR *************************/
-    .myCol{
-        background-color: var(--vert);
+    .navBar{
+        background-color: var(--sable);
         font-size: 1.2rem;
         font-weight: 500;
+        /* margin-top: 6em; */
     }
 
-    .myNav{
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        letter-spacing: 0.1rem;
-        transition: 0.2s;
-        color:var(--ivory) !important;
+    .titreNavbar{
+        /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+        color: var(--corail);
+        font-size: 5em;
+        padding: 15px;
+        letter-spacing: 0.3rem;
+
     }
 
-    .myNav:hover{
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        /* color: black !important; */
-        letter-spacing: 0.1rem;     
+    
+
+    .mtNav{
+        margin-top: 8em;
     }
+
+    body{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: var(--corail);
+    }
+
+
+
+
 
 /************************ CARDS *************************/
     /* #card{

@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 
 const TraitementForms = (props) => {
-    const { setAuth } = useContext(AuthContext);
+    const { setAuth, auth } = useContext(AuthContext);
     const navigate = useNavigate();
 
     const handleSubmit = (evt) => {
@@ -45,14 +45,16 @@ const TraitementForms = (props) => {
 
                     if(data.result){
                         document.cookie = `auth=${data.token};max-age=${60*60*24}`;
-                        setAuth({ role: data.role });
-                        console.log(data.role);
-                        navigate("/home");
+                        setAuth({ role:data.role, id:data.id });
+                        // setAuth({ role:data.role});
+
+                        navigate("/accueil");
                         
                     }
                     else{
                         document.cookie = `auth=null;max-age=0`;
-                        setAuth({ role: 0 });
+                        setAuth({ role:0, id:data.id });
+                        // setAuth({ role:0});
                     }
                 });
 

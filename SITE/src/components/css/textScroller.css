@@ -1,0 +1,8 @@
+.scroller {
+    display: flex;
+    color: aliceblue;
+    background-color:var(--text-primary);
+    height: 26px;
+    overflow: hidden;
+    letter-spacing: 0.1rem;
+  }

@@ -1,96 +1,67 @@
-body{
-    /* background-color: var(--sable) !important; */
-    /* background: linear-gradient(45deg, #ebd9d0, #aac3d3); */
-    /* background: linear-gradient(320deg, #009FBC, 35%, #FA7E00, #F4CE01); */
-    /* background: linear-gradient(320deg, #172833, #417CA3 30%, #A8BBB9 50%, #F1A319); */
-    min-height: 100vh;
-
-    /* background-color: var(--grey); */
+/* body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: var(--noir) !important;
+    min-height: 100vh;
     letter-spacing: 0.1rem;
 
-    /* Variables de couleurs */
-    --grey: #67595E;
-    --lightGrey: #A49393;
+    --noir: #001A3B;
+    --corail: #F25050;
+    --sable: #F2EDD5;
+    --gris: #5C5C5C;
+} */
 
-    --sable: #DCDACD;
-    /* --vert: #658EA9; */
-    --vert: #658EA9;
+/********************* BG COLOR **********************/
+    /* .bgSable{
+        background-color: var(--sable) !important;
+    }
 
-
-    --beige: #C0B3A0;
-    --salmon: #E98973;
-    /* --salmon: #c59892; */
-    /* --salmon: #9C3B48; */
-    
-    /* --salmon: #d09bc0; */
-    --corail: #E6C5B3;
-    --mint: #88B2CC;
-    --greenMint:#88ccc1;
-    --blue: #658EA9;
-    
-    --blueGrey: #6B8490;
-    --black: #252930;
-    /* --black: #312F44; */
-    /* --black: #303030; */
-    --ivory: #E3E6E0;
-    --kaki: #C0B3A0;
-
-}
-
-.bg-sable{
-    background-color: var(--sable) !important;
-}
-
-.bg-bleu{
-    background-color: var(--vert) !important;
-}
-
-.btnGeneral{
-    background-color: var(--vert) !important;
-    color: white !important;
-}
-
-.btnGeneral:hover{
-    /* background-color: var(--kaki) !important; */
-    box-shadow: inset 5px 5px 10px var(--black);
-    color: var(--black) !important;
-}
-
-.txtBeige{
-    color: var(--beige);
-}
-
-.txtVert{
-    color: var(--vert);
-}
-
-.txtSalmon{
-    color: var(--salmon) !important;
-    opacity: 1;
-}
-
-.txtBlack{
-    color: #2e2e2e;
-}
-
-.mb-footer{
-    margin-bottom: 8em;
-}
-
-.marginNav{
-    padding-top: 4em;
-}
+    .bgNoir{
+        background-color: var(--noir) !important;
+    } */
 
 
-.txt-gradiant:hover{
-    background: linear-gradient(
-            to right, 
-            rgb(0, 0, 0),
-            rgb(102, 102, 102)
-    );
-    
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-}
+
+/********************* TEXT COLOR **********************/
+    /* .txtGris{
+        color: var(--gris) !important;
+    }
+
+    .txtGris:hover{
+        color: var(--corail) !important;
+    }
+
+    .txtCorail{
+        color: var(--corail) !important;
+    }
+
+    .txtnoir{
+        color: #2e2e2e;
+    }
+
+    .essai:hover{
+        background-color: var(--corail) !important;
+        color: white !important;
+    } */
+
+/********************* TEXT COLOR **********************/
+    /* .btnGeneral{
+        background-color: var(--corail) !important;
+        color: white !important;
+    }
+
+    .btnGeneral:hover{
+        color: var(--black) !important;
+    } */
+
+
+/********************* MARGIN & PADDING **********************/
+    /* .mb8em{
+        margin-bottom: 8em;
+    }
+
+    .pt4em{
+        padding-top: 4em;
+    } */
+
+
+  

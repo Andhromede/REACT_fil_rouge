@@ -16,7 +16,7 @@ class AuthRouter{
 
     initializeRoutes = () => {
     /************************* LOGIN ************************/
-        this.router.post('/login', async (req, res) => {
+        this.router.post('/connexion', async (req, res) => {
             const data = await new AuthController().login(req.body);
             res.send(data);
         });

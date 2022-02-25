@@ -30,8 +30,8 @@
 //     }
     
 //     return (
-//         <div className="col-4 col-md-3 col-lg-2 bg-sable menuMargin">
-//             <div className="padding-top-navbar"><u className="fw-bolder h5 txtBlack">Mes animaux :</u> </div>
+//         <div className="col-4 col-md-3 col-lg-2 bgSable menuMargin">
+//             <div className="padding-top-navbar"><u className="fw-bolder h5 txtnoir">Mes animaux :</u> </div>
 //         </div>
 //     );
 // }

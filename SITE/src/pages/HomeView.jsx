@@ -1,9 +1,16 @@
+import { Link } from 'react-router-dom';
+
 
 const HomeView = (props) => {
+    // let title = "Veto'lib";
+
+
     return (
-        <div className="container marginNav">
-            <div className='text-center myTitle2 myColor h1'>Page Home</div>
-        </div>
+        <>
+            <div className="container pt4em">
+
+            </div>
+        </>
     );
 }
 

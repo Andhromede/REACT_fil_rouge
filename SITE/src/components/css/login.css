@@ -1,14 +1,9 @@
 .bgLoginCard{
     background-color: var(--sable);
-    border-radius: 2px;
-    border: solid var(--vert) 4px;
-    box-shadow: 10px 10px 7px rgb(77, 77, 77);
-    border-radius: 2px;
 }
 
 body{
     background-color: rgb(255, 255, 255);
-    /* background-color: rgb(172, 172, 172); */
 }
 
 .hr{

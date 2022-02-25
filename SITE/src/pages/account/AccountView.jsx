@@ -1,16 +1,9 @@
-import MenuLeft from '../components/MenuLeft';
-
+import Cards  from "../../components/Cards";
 
 const AccountView = (props) => {
     return (
         <div className="container-fluid">
-
-            <MenuLeft path={"http://localhost:5001/animal"} page={"accountView"}/>
-
-
-
-
-
+            <Cards method={"get"} page="account"/>
         </div>
     );
 }
