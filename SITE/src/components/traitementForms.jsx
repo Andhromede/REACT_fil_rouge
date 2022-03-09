@@ -47,13 +47,13 @@ const TraitementForms = (props) => {
                         document.cookie = `auth=${data.token};max-age=${60*60*24}`;
                         setAuth({ role:data.role, id:data.id });
                         // setAuth({ role:data.role});
-
                         navigate("/accueil");
                         
                     }
                     else{
                         document.cookie = `auth=null;max-age=0`;
                         setAuth({ role:0, id:data.id });
+                        navigate("/connexion");
                         // setAuth({ role:0});
                     }
                 });

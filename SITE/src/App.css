@@ -13,7 +13,8 @@ body {
     min-height: 100vh;
     letter-spacing: 0.1rem;
 
-    --noir: #001A3B;
+    /* --noir: #16273d; */
+    --noir: #212431;
     --corail: #F25050;
     --sable: #F2EDD5;
     --gris: #5C5C5C;
@@ -27,6 +28,12 @@ body {
 .bgNoir {
     background-color: var(--noir) !important;
 }
+
+.bgCorail {
+  background-color: var(--corail) !important;
+}
+
+
 
 
 

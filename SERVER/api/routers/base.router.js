@@ -17,6 +17,27 @@ class BaseRouter {
             const response = await this.controller.getAll();
             res.send(response);
         });
+
+        // this.router.get("/", async (req, res) => {
+        //     const params = {...req.body, where:`id=${req.body.where}`};
+        //     // const params = {...req.body.where};
+
+        //     if(params){
+        //         console.log(req.body.where);
+        //         const response = await this.controller.getAllBy(req.body.where);
+        //         res.send(response);
+        //     }else{
+        //         const response = await this.controller.getAll();
+        //         res.send(response);
+        //     }
+        // });
+
+        
+    /****************************** GET ALL BY *******************************/
+        // this.router.get("/", async (req, res) => {
+        //     const response = await this.controller.getAllBy(req.params.id_utilisateur);
+        //     res.send(response);
+        // });
     
 
     /****************************** GET ONE BY ******************************/

@@ -9,11 +9,11 @@ class BaseService {
     }
 
 
-/****************************************** CONNECTION *****************************************/
-    static connection;
+/****************************************** CONNEXION *****************************************/
+    static connexion;
     static connect = () => {
-        if (!BaseService.connection) {
-            BaseService.connection = mysql.createPool({
+        if (!BaseService.connexion) {
+            BaseService.connexion = mysql.createPool({
                 host: dbConfig.HOST,
                 port: dbConfig.PORT,
                 user: dbConfig.USER,
@@ -21,7 +21,7 @@ class BaseService {
                 database: dbConfig.NAME
             });
         }
-        return BaseService.connection;
+        return BaseService.connexion;
     }
 
 
@@ -46,7 +46,21 @@ class BaseService {
         if (params?.where) {
             sql += ` AND (${params.where.replaceAll('&&', 'AND').replaceAll('||', 'OR')});`;
         }
+        // console.log(sql);
         const rows = await BaseService.executeQuery(sql);
+        return rows;
+    }
+
+
+// /****************************************** SELECT ALL *****************************************/
+    getAllBy = async (param) => {
+        let sql = `SELECT * FROM ${this.table} WHERE ${param.where} AND deleted = 0`;
+        // if (id?.where) {
+        //     sql += ` AND (${params.where.replaceAll('&&', 'AND').replaceAll('||', 'OR')});`;
+        // }
+        // console.log(sql);
+        const rows = await BaseService.executeQuery(sql);
+        // console.log(rows);
         return rows;
     }
 

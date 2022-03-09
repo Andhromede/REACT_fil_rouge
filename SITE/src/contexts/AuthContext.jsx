@@ -16,8 +16,7 @@ const AuthProvider = ({ children }) => {
 
                 if (data.result) {
                     // console.log(data);
-                    // console.log("id: "+ data.id);
-                    setAuth({ role: data.role, id:data.id });
+                    setAuth({ role:data.role, id:data.id });
                 }
                 else {
                     document.cookie = `auth=null;max-age=0`;

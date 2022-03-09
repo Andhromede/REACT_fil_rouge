@@ -11,7 +11,7 @@ const AccountValidationView = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch("http://localhost:5000/auth/validate", {
+            const response = await fetch("http://localhost:5001/auth/validate", {
                 method: "post",
                 headers: {
                     "content-type": "application/json",

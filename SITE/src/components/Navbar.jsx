@@ -32,8 +32,8 @@ const NavigationBar = (props) => {
                     
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <a href={"/accueil"} className="nav-link txtGris hoverCorail">Accueil</a>
-                            <a href={"/accueil"} className="nav-link txtGris hoverCorail">Prendre Rdv</a>
+                            <a href={"/accueil"} className="nav-link txtGris hoverCorail mx-3">Accueil</a>
+                            <a href={"/accueil"} className="nav-link txtGris hoverCorail mx-3">Vétérinaires</a>
                         </Nav> 
 
                         <Form className="d-flex my-1 me-5">

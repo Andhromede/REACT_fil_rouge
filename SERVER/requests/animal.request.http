@@ -1,8 +1,16 @@
-# GET http://localhost:5001/adresse
+# GET http://localhost:5001/animal
 # GET http://localhost:5001/adresse/2
 # POST http://localhost:5001/adresse
 # PUT http://localhost:5001/adresse/1
 # DELETE http://localhost:5001/adresse/1
+
+
+
+# GET http://localhost:5001/animal
+# Content-Type: application/json
+# {
+#     "where": "id_utilisateur = '10'"
+# }
 
 
 

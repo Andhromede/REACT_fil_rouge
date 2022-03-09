@@ -1,0 +1,20 @@
+.inputs{
+    /* background-color: rgb(209, 209, 209) !important; */
+    border: var(--corail) solid 2px;
+}
+
+/* .bgTest:focus{
+    border: var(--corail) solid 2px !important;
+} */
+
+
+
+.hr{
+    background-color: var(--corail);
+    padding-top: 2px;
+    border-radius: 3px;
+}
+
+.corner{
+    border-radius:2px;
+}

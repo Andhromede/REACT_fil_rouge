@@ -1,9 +1,9 @@
-import TraitementForms from '../components/traitementForms';
+import TraitementForms from './traitementForms';
 import './css/login.css';
 import { Link } from 'react-router-dom';
 
 import { React, useEffect, useState } from 'react';
-import { loadCaptchaEnginge, LoadCanvasTemplate, LoadCanvasTemplateNoReload, validateCaptcha } from 'react-simple-captcha';
+import { loadCaptchaEnginge, LoadCanvasTemplateNoReload, validateCaptcha } from 'react-simple-captcha';
 
 
 const LoginForm = (props) => {

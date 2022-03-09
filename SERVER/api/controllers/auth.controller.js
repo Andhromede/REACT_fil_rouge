@@ -21,7 +21,7 @@ class AuthController {
     login = async (params) => {
         // if(params.method !== 'post') return {status:405};
         let utilisateur = await this.getUtilisateur(params.login);
-        console.log(utilisateur);
+        // console.log(utilisateur);
 
         if (utilisateur) {
             try {
@@ -30,10 +30,9 @@ class AuthController {
                 let result = await bcrypt.compare(passwordEnteredByUtilisateur, passwordHashed);
 
                 if (result) {
-                    const payload = { email: utilisateur.login, role: utilisateur.id_role };
-                    const token = jwt.sign(payload, appConfig.JWT_SECRET, { expiresIn: '1d' });
-                    // return {email:utilisateur.login, role:utilisateur.Id_role, token:token, result: true, message:"Vous etes bien connecté !"};
-                    // return {data:{...payload}, cookie:token};
+                    // const payload = { email: utilisateur.login, role: utilisateur.id_role };
+                    // const token = jwt.sign(payload, appConfig.JWT_SECRET, { expiresIn: '1d' });
+                    const token = jwt.sign({id: utilisateur.id_utilisateur, login: utilisateur.login, role: utilisateur.id_role}, appConfig.JWT_SECRET, { expiresIn: '1d' });
                     return { email: utilisateur.login, role: utilisateur.id_role, token, result: true, message: "Vous êtes bien authentifié !", id:utilisateur.id_utilisateur };
 
                 } else {
@@ -64,8 +63,10 @@ class AuthController {
 
         } else {
             try {
-                const payload = { mail: params.login, role: params.id_role };
-                const token = jwt.sign(payload, appConfig.JWT_SECRET, { expiresIn: '1d' });
+                // const payload = { mail: params.login, role: params.id_role };
+                // const token = jwt.sign(payload, appConfig.JWT_SECRET, { expiresIn: '1d' });
+
+                const token = jwt.sign({id: params.id_utilisateur, login: params.login, role: params.id_role}, appConfig.JWT_SECRET, { expiresIn: '1d' });
                 const html =
                     `<b>Lien de confirmation d'inscription: </b>
                      <a href="http://localhost:3000/account/validation?t=${encodeURIComponent(token)}" target="_blank">Confirmer mon inscription</a>
@@ -78,7 +79,7 @@ class AuthController {
                 let newPassword = await bcrypt.hash(params.password, 10);
                 newPassword = newPassword.slice(7, newPassword.length);
                 params.password = newPassword;
-                params.id_role = 2;
+                // params.id_role = 2;
 
                 const utilisateurService = new UtilisateurService();
                 await utilisateurService.insert(params);
@@ -98,10 +99,11 @@ class AuthController {
         if (auth) {
             const result = jwt.verify(auth, appConfig.JWT_SECRET);
             if (result) {
-                return { result:true, role:result.role }
+                // console.log(result);
+                return { result:true, role:result.role, id:result.id }
             }
         }
-        return { result: false, role: 0 }
+        return { result: false, role:0, id:0 }
     }
 
 

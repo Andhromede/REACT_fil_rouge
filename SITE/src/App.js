@@ -19,9 +19,10 @@ const UserValidationView = React.lazy(() => import("./pages/auth/UserValidationV
 const ErrorView = React.lazy(() => import("./pages/ErrorView"));
 const AdminView = React.lazy(() => import("./pages/admin/AdminView"));
 
-const UserView = React.lazy(() => import("./pages/account/UserView"));
+const DetailUserView = React.lazy(() => import("./pages/account/DetailUserView"));
 const AccountView = React.lazy(() => import("./pages/account/AccountView"));
 const ListeAnimauxView = React.lazy(() => import("./pages/account/ListeAnimauxView"));
+const DetailAnimalView = React.lazy(() => import("./pages/account/DetailAnimalView"));
 
 
 
@@ -39,11 +40,12 @@ const App = () => {
                         {auth.role === 0 && <Route path="/connexion" element={<Suspense fallback={<LoadingSpinner/>} > <LoginView/> </Suspense> } /> }
                         {auth.role > 0 && <Route path="/deconnexion" element={<Suspense fallback={<LoadingSpinner/>} > <LogoutView/> </Suspense> } />  }
                         
-                        {auth.role === 1 && <Route path="/admin" element={<Suspense fallback={<LoadingSpinner/>} > <AdminView/> </Suspense> } /> }
-                        {auth.role > 0 && <Route path="/user" element={<Suspense fallback={<LoadingSpinner/>} > <UserView/> </Suspense> } /> }
+                        <Route path="/admin" element={<Suspense fallback={<LoadingSpinner/>} > <AdminView/> </Suspense> } />
+                        {auth.role > 0 && <Route path="/account" element={<Suspense fallback={<LoadingSpinner/>} > <DetailUserView/> </Suspense> } /> }
                         <Route path="/user/validation" element={<Suspense fallback={<LoadingSpinner/>} > <UserValidationView/> </Suspense> } />
-                        <Route path="/account" element={<Suspense fallback={<LoadingSpinner/>} > <AccountView/> </Suspense> } />
+                        <Route path="/account/:id" element={<Suspense fallback={<LoadingSpinner/>} > <AccountView/> </Suspense> } />
                         <Route path="/animaux" element={<Suspense fallback={<LoadingSpinner/>} > <ListeAnimauxView/> </Suspense> } />
+                        <Route path="/detail/animal/:id" element={<Suspense fallback={<LoadingSpinner/>} > <DetailAnimalView/> </Suspense> } />
                     </Route>
 
                     <Route path="*" element={<Suspense fallback={<LoadingSpinner/>} > <ErrorView/> </Suspense> } />

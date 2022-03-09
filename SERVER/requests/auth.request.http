@@ -17,7 +17,7 @@
 # }
 
 
-# INSERT ONE USER IN BDD
+# # INSERT ONE USER IN BDD
 # PUT http://localhost:5001/auth/inscription
 # Content-Type: application/json
 

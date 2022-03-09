@@ -12,6 +12,11 @@ class BaseController{
         return result;
     };
 
+    getAllBy = async (param) => {
+        const result = await this.service.getAllBy(param);
+        return result;
+    };
+
     getOne = async (id) => {
         const result = await this.service.getOne(id);
         return result;
@@ -25,7 +30,7 @@ class BaseController{
     update = async (params) => {
         const result = await this.service.update(params);
         return result;
-      };
+    };
 
     delete = async (id) => {
         const result = await this.service.delete(id);
