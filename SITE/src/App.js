@@ -10,19 +10,17 @@ import LoadingSpinner from "./components/LoadingSpinner";
 
 
 const HomeView = React.lazy(() => import("./pages/HomeView"));
-
 const InscriptionView = React.lazy(() => import("./pages/auth/InscriptionView"));
 const LoginView = React.lazy(() => import("./pages/auth/LoginView"));
 const LogoutView = React.lazy(() => import("./pages/auth/LogoutView"));
 const UserValidationView = React.lazy(() => import("./pages/auth/UserValidationView"));
-
-const ErrorView = React.lazy(() => import("./pages/ErrorView"));
-const AdminView = React.lazy(() => import("./pages/admin/AdminView"));
-
 const DetailUserView = React.lazy(() => import("./pages/account/DetailUserView"));
 const AccountView = React.lazy(() => import("./pages/account/AccountView"));
-const ListeAnimauxView = React.lazy(() => import("./pages/account/ListeAnimauxView"));
-const DetailAnimalView = React.lazy(() => import("./pages/account/DetailAnimalView"));
+const ErrorView = React.lazy(() => import("./pages/ErrorView"));
+const AdminView = React.lazy(() => import("./pages/admin/AdminView"));
+const ListeAnimauxView = React.lazy(() => import("./pages/animal/ListeAnimauxView"));
+const DetailAnimalView = React.lazy(() => import("./pages/animal/DetailAnimalView"));
+const CarnetAnimalView = React.lazy(() => import("./pages/animal/CarnetAnimalView"));
 
 
 
@@ -45,6 +43,7 @@ const App = () => {
                         <Route path="/user/validation" element={<Suspense fallback={<LoadingSpinner/>} > <UserValidationView/> </Suspense> } />
                         <Route path="/account/:id" element={<Suspense fallback={<LoadingSpinner/>} > <AccountView/> </Suspense> } />
                         <Route path="/animaux" element={<Suspense fallback={<LoadingSpinner/>} > <ListeAnimauxView/> </Suspense> } />
+                        <Route path="/carnet/animal/:id" element={<Suspense fallback={<LoadingSpinner/>} > <CarnetAnimalView/> </Suspense> } />
                         <Route path="/detail/animal/:id" element={<Suspense fallback={<LoadingSpinner/>} > <DetailAnimalView/> </Suspense> } />
                     </Route>
 

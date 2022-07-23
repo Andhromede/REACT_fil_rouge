@@ -1,0 +1,32 @@
+    
+/********************* GENERAL  **********************/    
+    body{
+        height: 150vh;
+    }
+
+
+/********************* INPUTS  **********************/
+    .inputs{
+        /* border: solid 1px rgb(187, 187, 187);
+        border-radius: 5px;
+        background-color: white; */
+    
+        /* background-color: #F2EDD5; */
+        border: none;
+    }
+
+    .title{
+        font-size:2.5em;
+    }
+
+    .test{
+        border-right: solid 2px rgb(213, 213, 213) ;
+    }
+
+    @media (max-width: 768px) {
+        .test{
+            border: none;
+        } 
+    }
+
+

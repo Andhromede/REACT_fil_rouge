@@ -1,8 +1,7 @@
 const BaseService = require("./base.service");
 
 class UtilisateurService extends BaseService{
-
-
+    
     update = async (params) => {
         delete params.oldPassword;
         delete params.confirmPassword;
@@ -21,7 +20,6 @@ class UtilisateurService extends BaseService{
         return result;
     }
 
-    
 
     getUserBy = async (param) => {
         let sql = `SELECT * FROM ${this.table} WHERE ${param.where} AND deleted = 0`;
@@ -36,6 +34,14 @@ class UtilisateurService extends BaseService{
     verifyMdp = async (param) => {
         let sql = `SELECT * FROM ${this.table}  WHERE login = "${param}" AND deleted = 0`;
         const row = await BaseService.executeQuery(sql);
+        return row;
+    }
+
+/****************************************** SELECT ONE *****************************************/
+    getOne = async (login) => {
+        const sql = `SELECT * FROM ${this.table} WHERE deleted = 0 AND login="${login}"`;
+        const rows = await BaseService.executeQuery(sql);
+        const row = rows.length === 1 ? rows.pop() : null;
         return row;
     }
 

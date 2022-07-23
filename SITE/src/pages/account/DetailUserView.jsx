@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card';
 // import TraitementForms from '../../components/TraitementDetailAnimal';
 import '../css/detailUser.css';
 
-import DetailUser from '../../components/InputDetail';
+import InputDetail from '../../components/InputDetail';
 
 
 
@@ -46,14 +46,17 @@ const DetailUserView = (props) => {
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
+        document .querySelector('[name="confirm"]')?.classList.remove("is-invalid");
+        document .querySelector('[name="password"]')?.classList.remove("is-invalid");
 
-        // const form = evt.currentTarget;
         const form = document.getElementById('form');
         const formData = new FormData(form);
         const jsonData = Object.fromEntries(formData.entries());
+        const password = document.querySelector('[name="password"]').value;
+        const passwordConfirm = document.querySelector('[name="confirmPassword"]')?.value;
 
-        
-        console.log(Object.fromEntries(formData.entries()));
+        if(password === passwordConfirm ){
+            console.log(Object.fromEntries(formData.entries()));
             const body = JSON.stringify(jsonData);
 
             fetch(`http://localhost:5001/utilisateur/modification/${id}`, {
@@ -63,10 +66,19 @@ const DetailUserView = (props) => {
 
             }).then((resp) => resp.text())
             .then((text) => {
-                    const data = text.toJson();
+                const data = text.toJson();
+                
+                if(data){
+                    console.log("Modification réussie !");
+                }else{
+                    console.log("Erreur de modification !");
+                }
             });
-
-            console.log("Modification réussie !");
+            
+        }else{
+            document .querySelector('[name="confirmPassword"]')?.classList.add("is-invalid");
+            document .querySelector('[name="password"]')?.classList.add("is-invalid");
+        }
     }
 
 
@@ -74,10 +86,10 @@ const DetailUserView = (props) => {
 
 
     const modification = (evt) => {
-        let data2;
-
         evt.preventDefault();
+        let dataResult;
         const form = document.getElementById('form');
+
         const formData = new FormData(form);
         const jsonData = Object.fromEntries(formData.entries());
         let body = JSON.stringify(jsonData);
@@ -85,26 +97,27 @@ const DetailUserView = (props) => {
         fetch(`http://localhost:5001/utilisateur/verifyMdp`, {
             method: "post",
             headers: { "content-type": "application/json" },
-            body : body
+            body
 
         }).then((resp) => resp.text())
         .then((text) => {
-            data2 = text.toJson();
-            console.log(data2);
+            dataResult = text.toJson();
+            // console.log(dataResult);
 
-            if(data2){
+            if(dataResult){
                 let divOldPassword = document.querySelector('[name="divOldPassword"]');
                 let divPasswords = document.querySelector('[name="divPasswords"]');
+               
                 divPasswords?.classList.remove("d-none");
-                divOldPassword?.classList.add("d-none"); 
+                divOldPassword?.classList.add("d-none");
+
+                document.querySelector('[name="confirmPassword"]')?.classList.remove("is-invalid");
+                document.querySelector('[name="password"]')?.classList.remove("is-invalid"); 
 
             }else{
                 console.log("Erreur de modification !");
             }
         });
-
-        
-
     }
 
 
@@ -115,45 +128,57 @@ const DetailUserView = (props) => {
                 return (
                     <div className="container pb-5" key={"key" + user.id_utilisateur}>
 
-                        <div className='text-center txtCorail mt-5 h2'>Nom complet</div>
+                        
 
                         <form id="form">
-                            <div className="pb-3 name bgSable col-12 col-sm-10 col-md-8 col-lg-7 mx-auto corner">
+                            <div className="pb-3 name bgSable col-12 col-sm-10 col-md-8 col-lg-7 mx-auto borderRadius">
+                                <div className='text-center txtCorail mt-5 h2 pt-4'>Informations</div>
+
                                 <div className="row">
-                                    <DetailUser nomInput="nom" label="Nom" inputValue={user.nom} classe="my-4 col-5 mx-auto"/>
-                                    <DetailUser nomInput="prenom" label="Prénom" inputValue={user.prenom} classe="my-4 col-5 mx-auto"/>
+                                    <InputDetail nomInput="nom" label="Nom" inputValue={user.nom} classe="my-4 col-5 mx-auto"/>
+                                    <InputDetail nomInput="prenom" label="Prénom" inputValue={user.prenom} classe="my-4 col-5 mx-auto"/>
+                                    
+                                    <InputDetail nomInput="telephone" label="N° de telephone" inputValue={user.telephone} classe="col-5 mx-auto mt-3"/>
+                                    <InputDetail nomInput="mobile" label="N° de mobile" inputValue={user.mobile} classe="col-5 mx-auto mt-3"/>
+                                   
+                                    <div id="emailHelper" className="form-text col-6">ex: 0359895447</div>
+                                    <div id="emailHelper" className="form-text col-6">ex: 0612430627</div>
                                 </div>
                             </div>    
 
                             <hr className="my-4"/>
 
-                            <div className='text-center txtCorail mt-5 h2'>Sécurité</div>
+                            
 
-                            <div className="pb-3 name bgSable col-12 col-sm-10 col-md-8 col-lg-7 mx-auto corner">
+                            <div className="pb-3 name bgSable col-12 col-sm-10 col-md-8 col-lg-7 mx-auto borderRadius">
+                                <div className='text-center txtCorail mt-5 h2 pt-4'>Sécurité</div>
+
                                 <div className="row"  id="divOldPassword"  name="divOldPassword">
                                     <div className="col-11 mx-auto">
-                                        <DetailUser nomInput="oldPassword" label="Mots de passe actuel" inputValue="" classe="my-4 col-7 mx-auto"/>
+                                        <InputDetail nomInput="oldPassword" label="Mots de passe actuel" inputValue="" classe="my-4 col-5 mx-auto" type="password"/>
                                     </div>
 
                                     <div className="row">
-                                        <div className="col-4 mx-auto mt-4">
+                                        <div className="col-4 mx-auto ">
                                             <button type="submit" className="btn btnGeneral my-4 fw-bolder" name="modification"  onClick={modification}>Modifier</button>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div id="divPasswords" className="row d-none" id="divPasswords" name="divPasswords">
-                                    <DetailUser nomInput="password" label="Mots de passe" inputValue="" classe="my-4 col-5 mx-auto"/>
-                                    <DetailUser nomInput="confirmPassword" label="Confirmation" inputValue="" classe="my-4 col-5 mx-auto"/>
+                                <div id="divPasswords" className="row d-none" name="divPasswords">
+                                    <InputDetail nomInput="password" label="Mots de passe" inputValue="" classe="my-4 col-5 mx-auto" type="password"/>
+                                    <InputDetail nomInput="confirmPassword" label="Confirmation" inputValue="" classe="my-4 col-5 mx-auto"  type="password"/>
                                     <div id="emailHelper" className="form-text">Le mots de passe doit contenir au moins 5 characters.</div>
                                 </div>
                             </div>
 
                             <hr className="my-4"/>
 
-                            <div className='text-center txtCorail mt-5 h2'>Adresse</div>
+                           
 
-                            <div className="pb-3 name bgSable col-12 col-sm-10 col-md-8 col-lg-7 mx-auto corner">
+                            <div className="pb-3 name bgSable col-12 col-sm-10 col-md-8 col-lg-7 mx-auto borderRadius">
+                                <div className='text-center txtCorail mt-5 h2 pt-4'>Adresse</div>
+
                                 <div className="py-4 col-7 mx-auto">
                                     <label htmlFor="login" className="form-label txtCorail h5 fw-bolder">Email</label>
                                     <input type="email" className="form-control inputs" id="login" name="login" required value={user.login} readOnly={true}/>

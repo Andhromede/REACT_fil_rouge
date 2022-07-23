@@ -67,7 +67,16 @@ class BaseService {
 
 /****************************************** SELECT ONE *****************************************/
     getOne = async (id) => {
-        const sql = `SELECT * FROM ${this.table} WHERE deleted = 0 AND id=${id}`;
+        // const sql = `SELECT * FROM ${this.table} WHERE deleted = 0 AND id=${id}`;
+        const sql = `SELECT * FROM ${this.table} WHERE deleted = 0 AND id_${this.table}=${id}`;
+        const rows = await BaseService.executeQuery(sql);
+        const row = rows.length === 1 ? rows.pop() : null;
+        return row;
+    }
+
+
+    getOneBy = async (param) => {
+        const sql = `SELECT * FROM ${this.table} WHERE ${param.where} AND deleted = 0`;
         const rows = await BaseService.executeQuery(sql);
         const row = rows.length === 1 ? rows.pop() : null;
         return row;
@@ -143,6 +152,12 @@ class BaseService {
         const result = await BaseService.executeQuery(sql);
         return(result);
     }
+
+
+
+
+
+
 
 }
 

@@ -17,7 +17,8 @@ class UtilisateurRouter extends BaseRouter{
     /************************* MODIFIE LE COMPTE DE L'UTILISATEUR *************************/ 
         this.router.put("/modification/:id", async (req, res) => {
             const params = {...req.body, where:`id_utilisateur=${req.params.id}`};
-            const response = await this.controller.update(params);
+            // const response = await this.controller.update(params);
+            const response = await this.controller.updateUser(params);
             res.send(response);
         });
 
@@ -29,7 +30,6 @@ class UtilisateurRouter extends BaseRouter{
 
         this.router.post("/verifyMdp", async (req, res) => {
             const response = await this.controller.verifyMdp(req.body);
-            console.log(response);
             res.send(response);
         });
 

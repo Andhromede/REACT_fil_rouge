@@ -7,9 +7,6 @@ const AuthController = require('../controllers/auth.controller');
 class AuthRouter{
     constructor(){
         this.router = Router();
-        // this.name = "Auth";
-        // this.table = "auth";
-        this.router = Router();
         this.initializeRoutes();
     }
 

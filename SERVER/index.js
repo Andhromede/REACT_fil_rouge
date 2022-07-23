@@ -1,10 +1,11 @@
 require("./api/helpers/string.helper");
 const express = require("express");
 const app = express();
+const routers = require('./api/routers');
 const cors = require('cors');
 
 const corsOption ={
-  origin:['http://localhost:3000'],
+  origin: ['http://localhost:3000'],
   credentials: true
 };
 
@@ -14,12 +15,16 @@ app.use(express.json());
 let cookieParser = require('cookie-parser');
 app.use(cookieParser());
 
-const routers = require('./api/routers');
-for(const route in routers){
-    app.use(`/${route}`, new routers[route]().router);
-}
 
-// app.use('*', (req, res)=> res.send(false));
+const auth = require("./api/middlewares/auth.middleware");
+// for(const route in routers){
+//     app.use(`/${route}`, new routers[route]().router);
+// }
+
+for (const route in routers) {
+  const router = new routers[route]().router;
+  app.use(`/${route}`, router, auth);
+}
 
 const config = require("./api/configs/app.config");
 

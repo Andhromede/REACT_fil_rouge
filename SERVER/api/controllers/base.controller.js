@@ -22,6 +22,11 @@ class BaseController{
         return result;
     };
 
+    getOneBy = async (params) => {
+        const result = await this.service.getOneBy(params.where);
+        return result;
+    };
+
     insert = async (fields) => {
         const result = await this.service.insert(fields);
         return result;

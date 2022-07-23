@@ -10,14 +10,14 @@ import './css/card.css';
 
 
 const InputDetail = (props) => {
-    const {nomInput, inputValue, classe, label} = props;
+    const {nomInput, inputValue, classe, label, type} = props;
     
     
     return(
         
         <div className={classe}>
-            <label htmlFor={nomInput} className="form-label txtCorail h5 fw-bolder">{label}</label>
-            <input type="text" className="form-control inputs" id={nomInput} name={nomInput} defaultValue={inputValue}/>
+            <label htmlFor={nomInput} className="form-label txtCorail h5 fw-bolder" type={type}>{label}</label>
+            <input type={type} className="form-control inputs" id={nomInput} name={nomInput} defaultValue={inputValue}/>
         </div>
 
     );

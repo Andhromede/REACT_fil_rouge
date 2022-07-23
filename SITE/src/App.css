@@ -116,6 +116,15 @@ body {
 }
 
 
+
+.borderRadius{
+  border-radius:0.5em;
+}
+
+
+
+
+
 /*
 .App-logo {
   height: 40vmin;

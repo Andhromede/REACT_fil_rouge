@@ -1,14 +1,21 @@
 import TraitementForms from './traitementForms';
 import './css/login.css';
 import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+// import { AuthContext } from "../contexts/AuthContext";
 
 import { React, useEffect, useState } from 'react';
 import { loadCaptchaEnginge, LoadCanvasTemplateNoReload, validateCaptcha } from 'react-simple-captcha';
 
 
 const LoginForm = (props) => {
+    const navigate = useNavigate();
     const { method, path, submitButtonText } = props;
     const [captcha, setCaptcha] = useState(false);
+    
+    // if(AuthContext.user.id === 0){
+    //     navigate("/connexion");
+    // }
     
     useEffect( () => {
         if(method === "put") loadCaptchaEnginge(3);

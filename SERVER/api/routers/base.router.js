@@ -3,6 +3,7 @@ const Router = express.Router;
 const controllers = require('../controllers');
 
 class BaseRouter {
+    
     constructor() {
         this.router = Router();
         this.name = this.constructor.name.replace(`Router`, ``);
@@ -40,9 +41,16 @@ class BaseRouter {
         // });
     
 
-    /****************************** GET ONE BY ******************************/
+    /****************************** GET ONE ******************************/
         this.router.get("/:id", async (req, res) => {
             const response = await this.controller.getOne(req.params.id);
+            res.send(response);
+        });
+
+
+    /****************************** GET ONE BY ******************************/
+        this.router.get("/", async (req, res) => {
+            const response = await this.controller.getOneBy(req.params);
             res.send(response);
         });
 
@@ -63,7 +71,7 @@ class BaseRouter {
 
     /*************************** UPDATE SIMPLE ***************************/
         this.router.put("/:id", async (req, res) => {
-            const params = {...req.body, where:`id=${req.params.id}`};
+            const params = {...req.body, where:`id_${this.table}=${req.params.id}`};
             const response = await this.controller.update(params);
             res.send(response);
         });
@@ -78,7 +86,7 @@ class BaseRouter {
         
     /**************************** SOFT DELETE ****************************/   
         this.router.patch("/:id",async (req, res) => {
-            const params = {deleted: "1", where:`id=${req.params.id}`}
+            const params = {deleted: "1", where:`id_${this.table}=${req.params.id}`}
             const response = await this.controller.update(params);
             res.send(response);
         });

@@ -19,9 +19,7 @@ class AuthController {
 
     /***************************** LOGIN *****************************/
     login = async (params) => {
-        // if(params.method !== 'post') return {status:405};
         let utilisateur = await this.getUtilisateur(params.login);
-        // console.log(utilisateur);
 
         if (utilisateur) {
             try {
@@ -30,8 +28,6 @@ class AuthController {
                 let result = await bcrypt.compare(passwordEnteredByUtilisateur, passwordHashed);
 
                 if (result) {
-                    // const payload = { email: utilisateur.login, role: utilisateur.id_role };
-                    // const token = jwt.sign(payload, appConfig.JWT_SECRET, { expiresIn: '1d' });
                     const token = jwt.sign({id: utilisateur.id_utilisateur, login: utilisateur.login, role: utilisateur.id_role}, appConfig.JWT_SECRET, { expiresIn: '1d' });
                     return { email: utilisateur.login, role: utilisateur.id_role, token, result: true, message: "Vous êtes bien authentifié !", id:utilisateur.id_utilisateur };
 
@@ -40,11 +36,10 @@ class AuthController {
                     return { result: false, message: "Erreur de mots de passe." };
                 }
 
-            } catch (error) {
+            }catch (error) {
                 console.error(error);
                 return error;
             }
-
         } else {
             console.log("404");
             return { result: false, message: "Aucun utilisateur trouvé !" };
@@ -54,18 +49,13 @@ class AuthController {
 
     /***************************** INSCRIPTION *****************************/
     inscription = async (params) => {
-        // if(params.method !== 'PUT') return {status:405};
         let utilisateur = await this.getUtilisateur(params.login);
 
         if (utilisateur) {
-            //    console.log("Cet utilisateur existe déjà !");
             return { message: "Cet adresse mail existe déjà !" };
 
-        } else {
+        }else {
             try {
-                // const payload = { mail: params.login, role: params.id_role };
-                // const token = jwt.sign(payload, appConfig.JWT_SECRET, { expiresIn: '1d' });
-
                 const token = jwt.sign({id: params.id_utilisateur, login: params.login, role: params.id_role}, appConfig.JWT_SECRET, { expiresIn: '1d' });
                 const html =
                     `<b>Lien de confirmation d'inscription: </b>
@@ -79,19 +69,15 @@ class AuthController {
                 let newPassword = await bcrypt.hash(params.password, 10);
                 newPassword = newPassword.slice(7, newPassword.length);
                 params.password = newPassword;
-                // params.id_role = 2;
 
                 const utilisateurService = new UtilisateurService();
                 await utilisateurService.insert(params);
-
                 return { status: 200 };
 
             } catch (error) {
-                // console.error(error);
                 return { error };
             }
         }
-
     }
 
     check = async (params) => {

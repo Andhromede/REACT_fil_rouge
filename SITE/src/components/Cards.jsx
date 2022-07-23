@@ -54,7 +54,7 @@ const Cards = (props) => {
 
 
     let id_animal;
-    function test(e, id) {
+    function navigation(e, id) {
         id_animal = e.target.name;
         // console.log(e.target.name);
         if(page === "detailAnimal" || page === "animaux"){
@@ -79,7 +79,7 @@ const Cards = (props) => {
                             <div className="col-12 col-md-6 col-lg-4 mx-auto m-5 name" key={"key" + animal.id_animal} >
                                 <Card style={{ width: '18rem'}} id={animal.id_animal} className="mx-auto">
                                     {/* <a href={'/home'}> */}
-                                        <Card.Img variant="top" src={process.env.PUBLIC_URL + animal.img} name={animal.id_animal} onClick={(e) => test(e, e.target.name)}/>
+                                        <Card.Img variant="top" src={process.env.PUBLIC_URL + animal.img} name={animal.id_animal} onClick={(e) => navigation(e, e.target.name)}/>
                                     {/* </a> */}
     
                                     <Card.Body id='cardBody'>
@@ -96,7 +96,7 @@ const Cards = (props) => {
                     <div className="mx-auto m-5 name row">
                         <div className="col-12 col-md-6 col-lg-4 mt-5">
                             <Card style={{ width: '18rem'}} id="" className="mx-auto col-6">
-                                <Card.Img variant="top" src={process.env.PUBLIC_URL + "assets/image/animaux5_3.jpg"} name="animaux" onClick={(e) => test(e, e.target.name)}/>
+                                <Card.Img variant="top" src={process.env.PUBLIC_URL + "assets/image/animaux5_3.jpg"} name="animaux" onClick={(e) => navigation(e, e.target.name)}/>
                                 <Card.Body id='cardBody'>
                                     <Card.Title>Mes animaux</Card.Title>
                                 </Card.Body>
@@ -105,7 +105,7 @@ const Cards = (props) => {
                         
                         <div className="col-12 col-md-6 col-lg-4 mt-5">
                             <Card style={{ width: '18rem'}} id="" className="mx-auto col-6">
-                                <Card.Img variant="top" src={process.env.PUBLIC_URL + "assets/image/teletravail4.jpg"} name="account" onClick={(e) => test(e, e.target.name)}/>
+                                <Card.Img variant="top" src={process.env.PUBLIC_URL + "assets/image/teletravail4.jpg"} name="account" onClick={(e) => navigation(e, e.target.name)}/>
                                 <Card.Body id='cardBody'>
                                     <Card.Title>Mon compte</Card.Title>
                                 </Card.Body>
@@ -114,7 +114,7 @@ const Cards = (props) => {
 
                         <div className="col-12 col-md-6 col-lg-4 mt-5">
                             <Card style={{ width: '18rem'}} id="" className="mx-auto col-6">
-                                <Card.Img variant="top" src={process.env.PUBLIC_URL + "assets/image/rdv2_2.png"} name="rdv" onClick={(e) => test(e, e.target.name)}/>
+                                <Card.Img variant="top" src={process.env.PUBLIC_URL + "assets/image/rdv2_2.png"} name="rdv" onClick={(e) => navigation(e, e.target.name)}/>
                                 <Card.Body id='cardBody'>
                                     <Card.Title>Mes rendez-vous</Card.Title>
                                 </Card.Body>
@@ -123,7 +123,7 @@ const Cards = (props) => {
                         
                         <div className="col-12 col-md-6 col-lg-4 mt-5">
                             <Card style={{ width: '18rem'}} id="" className="mx-auto col-6">
-                                <Card.Img variant="top" src={process.env.PUBLIC_URL + "assets/image/veto_2.jpg"} name="veterinaires" onClick={(e) => test(e, e.target.name)}/>
+                                <Card.Img variant="top" src={process.env.PUBLIC_URL + "assets/image/veto_2.jpg"} name="veterinaires" onClick={(e) => navigation(e, e.target.name)}/>
                                 <Card.Body id='cardBody'>
                                     <Card.Title>Trouver un vétérinaire</Card.Title>
                                 </Card.Body>

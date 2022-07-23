@@ -6,34 +6,32 @@ const BaseController = require("./base.controller");
 class UtilisateurController extends BaseController{
 
     updateUser = async (params) => {
+        // console.log(params);
         let utilisateur = await this.getOne(params.login);
-        // console.log(utilisateur);
 
         if(utilisateur){
-            try {
-                if(params.password){
-                    const passwordForm = params.password;
-                    const passwordUser = utilisateur.password;
-                    let resultPassword = await bcrypt.compare(passwordForm, passwordUser);
+            if(params.password !== ''){
+                try {
+                    let newPassword = await bcrypt.hash(params.confirmPassword, 10);
+                    newPassword = newPassword.slice(7, newPassword.length);
+                    params.password = newPassword;
 
-                    if(!resultPassword){
-                        console.error("401");
-                        return { result: false, message: "Mauvais mots de passe pour ce compte !" };
-                    }
+                }catch (error) {
+                    console.error(error);
+                    return error;
                 }
-
-            }catch (error) {
-                console.error(error);
-                return error;
+            }else{
+                delete params.password;
+                // console.log(params);
             }
 
+            const resultUpdate = await this.service.update(params);
+            return { result: resultUpdate, message: "Utilisateur modifié !" };
+
         }else {
-            console.log("404");
-            return { result: false, message: "Aucun utilisateur trouvé !" };
+            return { result: false, message: "L'utilisateur n'existe pas !" };
         }
 
-        const resultUpdate = await this.service.update(params);
-        return resultUpdate;
     };
 
 
@@ -44,11 +42,8 @@ class UtilisateurController extends BaseController{
 
 
     verifyMdp = async (param) => {
-        // console.log(param);
-
         try {
             const utilisateur = await this.service.verifyMdp(param.login);
-            console.log(utilisateur);
             const passwordHashed = `${appConfig.HASH_PREFIX + utilisateur[0].password}`;
             const passwordEnteredByUtilisateur = param.oldPassword;
             let result = await bcrypt.compare(passwordEnteredByUtilisateur, passwordHashed);
@@ -60,7 +55,6 @@ class UtilisateurController extends BaseController{
             }
                     
         }catch (error) {
-            console.error(error);
             return error;
         }
     };
